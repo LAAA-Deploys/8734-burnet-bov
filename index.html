@@ -149,6 +149,33 @@
   .recommend .band{font-size:27px;font-weight:800;color:#0a2540;margin:6px 0}
   .recommend p{color:#33301f;font-size:14px}
 
+  .wf-inputs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 18px}
+  .wfi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:11px 12px}
+  .wfi label{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--sub);
+    font-weight:700;display:block}
+  .wfi .ib{display:flex;align-items:baseline;gap:5px;margin-top:6px}
+  .wfi input{width:74px;padding:7px 8px;border:1px solid var(--line);border-radius:5px;
+    font-size:16px;font-weight:700;color:var(--navy);text-align:right;font-family:inherit}
+  .wfi input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+  .wfi .u{font-size:13px;color:var(--sub);font-weight:700}
+  .wfbar{display:flex;height:46px;border-radius:6px;overflow:hidden;margin:18px 0 4px;
+    font-size:12.5px;font-weight:700}
+  .wfbar div{display:flex;align-items:center;justify-content:center;white-space:nowrap;
+    padding:0 8px;min-width:0}
+  .wfbar .lp{background:linear-gradient(135deg,#b8985a,#cdb079);color:#1c2b1c}
+  .wfbar .gp{background:linear-gradient(135deg,#0a2540,#143b6b);color:#fff}
+  .lpgp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+  .pc{border:1px solid var(--line);border-radius:8px;padding:16px}
+  .pc.lp{border-top:3px solid var(--gold)}
+  .pc.gp{border-top:3px solid var(--navy)}
+  .pc h3{font-size:14px;margin-bottom:6px}
+  .pc .ln{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:5px 0;
+    border-bottom:1px solid var(--line)}
+  .pc .ln:last-child{border-bottom:none}
+  .pc .ln span:last-child{font-weight:700;color:var(--navy);white-space:nowrap}
+  .pc .ln.big{font-size:15px;font-weight:800;border-bottom:none;border-top:2px solid var(--navy);
+    margin-top:2px;padding-top:7px}
+
   .risk{background:var(--panel);border-left:3px solid var(--red);border-radius:6px;
     padding:14px 16px;margin-bottom:10px}
   .risk h3{font-size:14.5px;color:var(--red);margin-bottom:3px}
@@ -171,6 +198,7 @@
     .steps{grid-template-columns:1fr 1fr}
     .model{grid-template-columns:1fr}
     .tk-grid{grid-template-columns:1fr}
+    .lpgp{grid-template-columns:1fr}
     header h1{font-size:26px}
     section{padding:26px 0}
     .hero-img{height:300px}
@@ -194,6 +222,7 @@
     .presets button{font-size:11px;padding:10px 4px}
     .recommend{padding:20px 18px}
     .recommend .band{font-size:22px}
+    .wf-inputs{grid-template-columns:1fr}
   }
 </style>
 </head>
@@ -219,6 +248,7 @@
   <a href="#comps">Comps</a>
   <a href="#model">Return Model</a>
   <a href="#scenarios">Scenarios</a>
+  <a href="#waterfall">Waterfall</a>
   <a href="#risks">Risks</a>
   <a href="#next">Next Steps</a>
 </div></nav>
@@ -513,9 +543,81 @@
   the gating diligence.</p>
 </div></div></section>
 
+<!-- WATERFALL -->
+<section id="waterfall"><div class="wrap"><div class="card">
+  <h2><span class="num">06</span>LP Investor Waterfall</h2>
+  <p class="lead">How the deal's equity and profit are distributed between the
+  <b>LP investors</b> (the equity raise) and the <b>GP / sponsor</b>. Distributions
+  follow a standard structure &mdash; return of capital, then a preferred return, then a
+  residual split (the sponsor promote). The three structure inputs are editable
+  assumptions; capital and profit flow <b>live from the model</b> above &mdash; switch
+  Conservative / Base / Upside with the presets in section 04 and this updates with it.</p>
+
+  <div class="wf-inputs">
+    <div class="wfi"><label>GP Co-Investment</label>
+      <div class="ib"><input id="gpCoinvest" value="10" inputmode="decimal"><span class="u">%</span></div></div>
+    <div class="wfi"><label>LP Preferred Return</label>
+      <div class="ib"><input id="prefRate" value="8" inputmode="decimal"><span class="u">% / yr</span></div></div>
+    <div class="wfi"><label>Residual Split to LP</label>
+      <div class="ib"><input id="lpSplit" value="70" inputmode="decimal"><span class="u">% (GP rest)</span></div></div>
+  </div>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Distribution Tier</th><th class="right">Amount</th>
+      <th class="right">To LP</th><th class="right">To GP</th></tr></thead>
+    <tbody>
+      <tr><td>Tier 1 &middot; Return of Capital</td>
+        <td class="right" id="wf-t1">&mdash;</td><td class="right" id="wf-t1-lp">&mdash;</td>
+        <td class="right" id="wf-t1-gp">&mdash;</td></tr>
+      <tr><td>Tier 2 &middot; Preferred Return</td>
+        <td class="right" id="wf-t2">&mdash;</td><td class="right" id="wf-t2-lp">&mdash;</td>
+        <td class="right" id="wf-t2-gp">&mdash;</td></tr>
+      <tr><td>Tier 3 &middot; Residual Split (promote)</td>
+        <td class="right" id="wf-t3">&mdash;</td><td class="right" id="wf-t3-lp">&mdash;</td>
+        <td class="right" id="wf-t3-gp">&mdash;</td></tr>
+      <tr style="font-weight:800;background:#fbf7ee">
+        <td>Total Distributions</td>
+        <td class="right" id="wf-tot">&mdash;</td><td class="right" id="wf-tot-lp">&mdash;</td>
+        <td class="right" id="wf-tot-gp">&mdash;</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="wfbar">
+    <div class="lp" id="wf-lpbar">LP</div>
+    <div class="gp" id="wf-gpbar">GP</div>
+  </div>
+  <p class="tcap">Share of total project profit &mdash; LP investors vs. GP/sponsor
+  (carried interest / promote).</p>
+
+  <div class="lpgp">
+    <div class="pc lp">
+      <h3>LP Investors</h3>
+      <div class="ln"><span>Capital invested</span><span id="lp-cap">&mdash;</span></div>
+      <div class="ln"><span>Total distributions</span><span id="lp-dist">&mdash;</span></div>
+      <div class="ln"><span>Net profit</span><span id="lp-profit">&mdash;</span></div>
+      <div class="ln"><span>Annualized return</span><span id="lp-ann">&mdash;</span></div>
+      <div class="ln big"><span>Equity multiple</span><span id="lp-mult">&mdash;</span></div>
+    </div>
+    <div class="pc gp">
+      <h3>GP / Sponsor</h3>
+      <div class="ln"><span>Co-investment</span><span id="gp-cap">&mdash;</span></div>
+      <div class="ln"><span>Total distributions</span><span id="gp-dist">&mdash;</span></div>
+      <div class="ln"><span>Net profit (incl. promote)</span><span id="gp-profit">&mdash;</span></div>
+      <div class="ln"><span>Annualized return</span><span id="gp-ann">&mdash;</span></div>
+      <div class="ln big"><span>Equity multiple</span><span id="gp-mult">&mdash;</span></div>
+    </div>
+  </div>
+
+  <p class="small" style="margin-top:14px">Standard structure shown: the preferred return
+  accrues pari passu on all equity (LP and GP co-investment), then residual profit splits
+  with a sponsor promote. Preferred return is simple (non-compounded) over the hold
+  period. Adjust the three inputs to the actual partnership terms. Illustrative only
+  &mdash; not an offer of securities.</p>
+</div></div></section>
+
 <!-- RISKS -->
 <section id="risks"><div class="wrap"><div class="card">
-  <h2><span class="num">06</span>Key Risks &amp; Contingencies</h2>
+  <h2><span class="num">07</span>Key Risks &amp; Contingencies</h2>
   <p class="lead">A condo conversion is an <b>entitlement play</b>, not just a renovation.
   These items drive the difference between the base and conservative cases &mdash; and
   one of them is binary.</p>
@@ -560,7 +662,7 @@
 
 <!-- NEXT STEPS -->
 <section id="next"><div class="wrap"><div class="card">
-  <h2><span class="num">07</span>Diligence Checklist &mdash; 12-Day Window</h2>
+  <h2><span class="num">08</span>Diligence Checklist &mdash; 12-Day Window</h2>
   <p class="lead">What to confirm before removing contingencies, to replace the model's
   assumptions with deal facts:</p>
   <ul class="checks">
@@ -676,6 +778,7 @@ function render(){
     +p.c1+'× 1BD @ '+money(p.price1)+'   ·   '
     +p.c2+'× 2BD @ '+money(p.price2)+'   ·   '
     +p.c3+'× 3BD @ '+money(p.price3);
+  fillWaterfall(r.equity,r.profit,p.timeline/12);
 }
 
 function buildScenarioTable(){
@@ -718,6 +821,52 @@ IDS.forEach(id=>$(id).addEventListener('input',()=>{
   ['conservative','base','upside'].forEach(c=>$('pb-'+c).classList.remove('on'));
   render();
 }));
+
+function fillWaterfall(E,P,years){
+  const g=n('gpCoinvest')/100, pr=n('prefRate')/100, lpS=n('lpSplit')/100;
+  const lpCap=E*(1-g), gpCap=E*g;
+  const totalDist=Math.max(0,E+P);
+  const capRet=Math.min(E,totalDist);
+  let rem=totalDist-capRet;
+  const prefDue=E*pr*years;
+  const prefPaid=Math.min(prefDue,rem); rem-=prefPaid;
+  const residual=rem;
+  const lpCapRet=capRet*(1-g), gpCapRet=capRet*g;
+  const lpPref=prefPaid*(1-g), gpPref=prefPaid*g;
+  const lpRes=residual*lpS, gpRes=residual*(1-lpS);
+  const lpTot=lpCapRet+lpPref+lpRes, gpTot=gpCapRet+gpPref+gpRes;
+  const lpProfit=lpTot-lpCap, gpProfit=gpTot-gpCap;
+  $('wf-t1').textContent=money(capRet);
+  $('wf-t1-lp').textContent=money(lpCapRet);
+  $('wf-t1-gp').textContent=money(gpCapRet);
+  $('wf-t2').textContent=money(prefPaid);
+  $('wf-t2-lp').textContent=money(lpPref);
+  $('wf-t2-gp').textContent=money(gpPref);
+  $('wf-t3').textContent=money(residual);
+  $('wf-t3-lp').textContent=money(lpRes);
+  $('wf-t3-gp').textContent=money(gpRes);
+  $('wf-tot').textContent=money(totalDist);
+  $('wf-tot-lp').textContent=money(lpTot);
+  $('wf-tot-gp').textContent=money(gpTot);
+  const tp=lpProfit+gpProfit;
+  const lpPct=tp>0?lpProfit/tp*100:50;
+  $('wf-lpbar').style.width=lpPct.toFixed(1)+'%';
+  $('wf-gpbar').style.width=(100-lpPct).toFixed(1)+'%';
+  $('wf-lpbar').textContent='LP '+lpPct.toFixed(0)+'%';
+  $('wf-gpbar').textContent='GP '+(100-lpPct).toFixed(0)+'%';
+  $('lp-cap').textContent=money(lpCap);
+  $('lp-dist').textContent=money(lpTot);
+  $('lp-profit').textContent=money(lpProfit);
+  $('lp-ann').textContent=(lpCap>0?(lpProfit/lpCap/years*100).toFixed(0):'0')+'%';
+  $('lp-mult').textContent=(lpCap>0?(lpTot/lpCap).toFixed(2):'0.00')+'x';
+  $('gp-cap').textContent=money(gpCap);
+  $('gp-dist').textContent=money(gpTot);
+  $('gp-profit').textContent=money(gpProfit);
+  $('gp-ann').textContent=(gpCap>0?(gpProfit/gpCap/years*100).toFixed(0)+'%':'n/a');
+  $('gp-mult').textContent=(gpCap>0?(gpTot/gpCap).toFixed(2)+'x':'promote only');
+}
+const WIDS=['gpCoinvest','prefRate','lpSplit'];
+WIDS.forEach(id=>$(id).addEventListener('input',render));
 
 buildScenarioTable();
 loadPreset('base');
