@@ -114,9 +114,9 @@
   .mixtable th{background:var(--panel);color:var(--navy);font-size:10px;padding:6px 4px;
     text-transform:uppercase;letter-spacing:.03em;text-align:right}
   .mixtable th:first-child{text-align:left}
-  .mixtable td{padding:5px 4px;border-bottom:1px solid var(--line)}
-  .mixtable td:first-child{font-weight:700;color:var(--navy);font-size:13px}
-  .mixtable input{width:84px;padding:7px 6px;border:1px solid var(--line);border-radius:6px;
+  .mixtable td{padding:5px 4px;border-bottom:1px solid var(--line);text-align:right;font-size:13px}
+  .mixtable td:first-child{font-weight:700;color:var(--navy);text-align:left}
+  .mixtable input{width:78px;padding:7px 6px;border:1px solid var(--line);border-radius:6px;
     font-size:16px;text-align:right;font-family:inherit;color:var(--navy);font-weight:600}
   .mixtable input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
   .mixtotal{font-size:12.5px;color:var(--navy);background:var(--panel);border:1px solid var(--line);
@@ -213,13 +213,13 @@
     .card h2{font-size:20px}
     .specs{grid-template-columns:1fr 1fr}
     .metrics{grid-template-columns:1fr}
-    .scroll table{min-width:520px}
+    .scroll table{min-width:540px}
     table{font-size:12.5px}
     th,td{padding:8px 7px}
     .hero-img{height:200px}
     .result-hero .big{font-size:31px}
     .field input{width:108px}
-    .mixtable input{width:66px;padding:7px 4px}
+    .mixtable input{width:64px;padding:7px 4px}
     .mixtable td,.mixtable th{padding:5px 3px}
     .presets button{font-size:11px;padding:10px 4px}
     .recommend{padding:20px 18px}
@@ -246,7 +246,7 @@
 
 <nav><div class="wrap">
   <a href="#deal">The Deal</a>
-  <a href="#units">Units</a>
+  <a href="#units">Unit Schedule</a>
   <a href="#strategy">Strategy</a>
   <a href="#comps">Comps</a>
   <a href="#model">Return Model</a>
@@ -289,54 +289,59 @@
   Atlantic Escrow (Ruby Tsai); Title: Fidelity Title (Nicole Menard). <b>Counter expires
   7:00 PM, May 17, 2026.</b> &mdash; <span class="pill p-src">Sourced</span> from Seller
   Counter Offer No. 1 and the MLS listing one-line report.</p>
-</div>
+</div></div></section>
 
-<div class="card" id="units">
-  <h2>Unit Schedule &amp; Rent Roll</h2>
+<!-- UNIT SCHEDULE -->
+<section id="units"><div class="wrap"><div class="card">
+  <h2><span class="num">02</span>Unit Schedule &amp; Rent Roll</h2>
   <p class="lead">All 20 units are <b>separate condominium parcels</b> at the LA County
   Assessor &mdash; two identical 10-unit buildings, built 1990. Per-unit square footage
-  is from Assessor records. <b>Actual rents and which 5 units are vacant come from the
-  seller's certified rent roll &mdash; still outstanding.</b></p>
+  is from Assessor records; the <b>Est. Exit Value</b> column is each unit's SF &times;
+  the model's current exit $/SF. <b>Actual rents and which 5 units are vacant come from
+  the seller's certified rent roll &mdash; still outstanding.</b></p>
   <div class="scroll"><table>
     <thead><tr><th>#</th><th>Unit</th><th>APN</th><th>Mix</th>
-      <th class="right">SqFt</th><th class="right">Rent</th></tr></thead>
+      <th class="right">SqFt</th><th class="right">Est. Exit Value</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>8734 Burnet Ave #1</td><td>2654-007-167</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right">&mdash;</td></tr>
-      <tr><td>2</td><td>8734 Burnet Ave #2</td><td>2654-007-168</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>3</td><td>8734 Burnet Ave #3</td><td>2654-007-169</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>4</td><td>8734 Burnet Ave #4</td><td>2654-007-170</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>5</td><td>8734 Burnet Ave #5</td><td>2654-007-171</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>6</td><td>8734 Burnet Ave #6</td><td>2654-007-172</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right">&mdash;</td></tr>
-      <tr><td>7</td><td>8734 Burnet Ave #7</td><td>2654-007-173</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right">&mdash;</td></tr>
-      <tr><td>8</td><td>8734 Burnet Ave #8</td><td>2654-007-174</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>9</td><td>8734 Burnet Ave #9</td><td>2654-007-175</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>10</td><td>8734 Burnet Ave #10</td><td>2654-007-176</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right">&mdash;</td></tr>
-      <tr><td>11</td><td>8736 Burnet Ave #1</td><td>2654-007-177</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right">&mdash;</td></tr>
-      <tr><td>12</td><td>8736 Burnet Ave #2</td><td>2654-007-178</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>13</td><td>8736 Burnet Ave #3</td><td>2654-007-179</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>14</td><td>8736 Burnet Ave #4</td><td>2654-007-180</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>15</td><td>8736 Burnet Ave #5</td><td>2654-007-181</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>16</td><td>8736 Burnet Ave #6</td><td>2654-007-182</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right">&mdash;</td></tr>
-      <tr><td>17</td><td>8736 Burnet Ave #7</td><td>2654-007-183</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right">&mdash;</td></tr>
-      <tr><td>18</td><td>8736 Burnet Ave #8</td><td>2654-007-184</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>19</td><td>8736 Burnet Ave #9</td><td>2654-007-185</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right">&mdash;</td></tr>
-      <tr><td>20</td><td>8736 Burnet Ave #10</td><td>2654-007-186</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right">&mdash;</td></tr>
+      <tr><td>1</td><td>8734 Burnet Ave #1</td><td>2654-007-167</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux1">&mdash;</td></tr>
+      <tr><td>2</td><td>8734 Burnet Ave #2</td><td>2654-007-168</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux2">&mdash;</td></tr>
+      <tr><td>3</td><td>8734 Burnet Ave #3</td><td>2654-007-169</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux3">&mdash;</td></tr>
+      <tr><td>4</td><td>8734 Burnet Ave #4</td><td>2654-007-170</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux4">&mdash;</td></tr>
+      <tr><td>5</td><td>8734 Burnet Ave #5</td><td>2654-007-171</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux5">&mdash;</td></tr>
+      <tr><td>6</td><td>8734 Burnet Ave #6</td><td>2654-007-172</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux6">&mdash;</td></tr>
+      <tr><td>7</td><td>8734 Burnet Ave #7</td><td>2654-007-173</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux7">&mdash;</td></tr>
+      <tr><td>8</td><td>8734 Burnet Ave #8</td><td>2654-007-174</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux8">&mdash;</td></tr>
+      <tr><td>9</td><td>8734 Burnet Ave #9</td><td>2654-007-175</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux9">&mdash;</td></tr>
+      <tr><td>10</td><td>8734 Burnet Ave #10</td><td>2654-007-176</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux10">&mdash;</td></tr>
+      <tr><td>11</td><td>8736 Burnet Ave #1</td><td>2654-007-177</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux11">&mdash;</td></tr>
+      <tr><td>12</td><td>8736 Burnet Ave #2</td><td>2654-007-178</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux12">&mdash;</td></tr>
+      <tr><td>13</td><td>8736 Burnet Ave #3</td><td>2654-007-179</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux13">&mdash;</td></tr>
+      <tr><td>14</td><td>8736 Burnet Ave #4</td><td>2654-007-180</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux14">&mdash;</td></tr>
+      <tr><td>15</td><td>8736 Burnet Ave #5</td><td>2654-007-181</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux15">&mdash;</td></tr>
+      <tr><td>16</td><td>8736 Burnet Ave #6</td><td>2654-007-182</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux16">&mdash;</td></tr>
+      <tr><td>17</td><td>8736 Burnet Ave #7</td><td>2654-007-183</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux17">&mdash;</td></tr>
+      <tr><td>18</td><td>8736 Burnet Ave #8</td><td>2654-007-184</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux18">&mdash;</td></tr>
+      <tr><td>19</td><td>8736 Burnet Ave #9</td><td>2654-007-185</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux19">&mdash;</td></tr>
+      <tr><td>20</td><td>8736 Burnet Ave #10</td><td>2654-007-186</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux20">&mdash;</td></tr>
+      <tr style="font-weight:800;background:#fbf7ee">
+        <td colspan="4">Total &mdash; 20 units</td>
+        <td class="right">24,060</td><td class="right" id="sched-total">&mdash;</td></tr>
     </tbody>
   </table></div>
-  <p class="tcap">12 &times; 2BR/3BA @ 1,040 SF &nbsp;&middot;&nbsp; 8 &times; 3BR/3BA
-  (1,380 / 1,500 / 1,530 SF) &nbsp;&middot;&nbsp; <b>24,060 SF</b> total &nbsp;&middot;&nbsp;
-  built 1990. Rent column populates from the seller's certified rent roll.</p>
+  <p class="tcap">Est. Exit Value = each unit's Assessor square footage &times; the
+  model's current exit $/SF (<span id="sched-psf">&mdash;</span>) &mdash; it ties exactly
+  to the model sellout. Rent column populates from the seller's certified rent roll.</p>
 </div></div></section>
 
 <!-- STRATEGY -->
 <section id="strategy"><div class="wrap"><div class="card">
-  <h2><span class="num">02</span>The Value-Creation Strategy</h2>
+  <h2><span class="num">03</span>The Value-Creation Strategy</h2>
   <p class="lead">The return is the spread between the rental-basis acquisition
   (~$205K/unit) and the for-sale value of a renovated condominium (~$495K for a 2BR,
   ~$625K for a 3BR). <b>How that spread is captured depends on the legal path:</b> the
-  listing represents the subdivision as already in place &mdash; a fast HOA reactivation
-  &mdash; but if the title report shows otherwise it becomes a full Tentative-Tract-Map
-  conversion. The model lets you compare both.</p>
+  Assessor and listing indicate the subdivision is already in place &mdash; a fast HOA
+  reactivation &mdash; but if the title report shows otherwise it becomes a full
+  Tentative-Tract-Map conversion. The model lets you compare both.</p>
   <div class="steps">
     <div class="step"><div class="n">Step 1 &mdash; Buy</div><h3>Acquire</h3>
       <p>Close the 20-unit building all-cash per the counter, funded with an acquisition
@@ -355,10 +360,10 @@
 
 <!-- COMPS -->
 <section id="comps"><div class="wrap"><div class="card">
-  <h2><span class="num">03</span>For-Sale Comp Analysis</h2>
+  <h2><span class="num">04</span>For-Sale Comp Analysis</h2>
   <p class="lead">Finished-product evidence: what renovated condominiums trade for in
   North Hills (91343). The value argument is finished-condo $/SF by unit type &mdash;
-  not rent or cap rate.</p>
+  the same $/SF that drives the exit values in the model.</p>
 
   <h3 style="font-size:14px;color:var(--navy);margin:14px 0 4px">Closed Sales &mdash; North Hills Condos (2025)</h3>
   <div class="scroll"><table>
@@ -421,26 +426,25 @@
       <p>Closed 2025 condo sales in 91343 span <b>~$367-$491/SF</b>; 2BR units cluster
       ~$445-490/SF and mid-size 3BR units ~$400-450/SF.</p></div>
     <div class="tk"><div class="n">Takeaway 2</div>
-      <p>Applied to the subject &mdash; renovated exits near <b>$495K for a 2BR</b>
-      (1,040 SF) and <b>$625K for a 3BR</b> (~1,455 SF) &mdash; the 20-unit sellout
-      base-cases to <b>~$10.9M</b>, a blended ~$547K/unit.</p></div>
+      <p>The model base-cases the exits at <b>$476/SF (2BR)</b> and <b>$432/SF (3BR)</b>
+      &mdash; well inside the comp band, conservative against new construction at
+      ~$465-472/SF.</p></div>
     <div class="tk"><div class="n">Takeaway 3</div>
       <p><b>Absorption risk is real:</b> Valley Villas is delivering 75 brand-new condos
-      in the same ZIP. The subject competes on price and renovation quality against new
-      construction.</p></div>
+      in the same ZIP &mdash; direct competition for the 3BR sell-out.</p></div>
     <div class="tk"><div class="n">Takeaway 4</div>
       <p>Acquisition at $205K/unit vs. a blended finished basis near $547K/unit is the
-      <b>condominium arbitrage</b> &mdash; the entire thesis. Tri-level townhomes with
-      attached 2-car garages are a desirable for-sale format.</p></div>
+      <b>condominium arbitrage</b> &mdash; the entire thesis.</p></div>
   </div>
 </div></div></section>
 
 <!-- RETURN MODEL -->
 <section id="model"><div class="wrap"><div class="card">
-  <h2><span class="num">04</span>Interactive Return Model</h2>
-  <p class="lead">Pick a <b>legal path</b> and a <b>scenario</b>. The
-  <span class="pill p-src">Sourced</span> inputs &mdash; the $4.1M price and the 12&times;2BR
-  / 8&times;3BR mix &mdash; are fixed; every other figure is an editable
+  <h2><span class="num">05</span>Interactive Return Model</h2>
+  <p class="lead">Pick a <b>legal path</b> and a <b>scenario</b>. The $4.1M price, the
+  12&times;2BR / 8&times;3BR mix and the Assessor square footage are
+  <span class="pill p-src">Sourced</span> and fixed; <b>exit values are computed as each
+  type's total SF &times; an editable $/SF</b>. Every other figure is an editable
   <span class="pill p-assume">Assumption</span> that recomputes the return live.</p>
 
   <div class="toggle-label">Legal Path</div>
@@ -463,18 +467,17 @@
       <div class="field"><label>Acq. closing costs <span class="hint">% of price</span></label>
         <input id="acqClosingPct" value="1.25" inputmode="decimal"></div>
 
-      <h3>Unit Mix &amp; Exit Values</h3>
+      <h3>Unit Mix &amp; Exit Pricing</h3>
       <table class="mixtable">
-        <thead><tr><th>Type</th><th>Units</th><th>Reno&nbsp;/&nbsp;unit</th><th>Sale&nbsp;/&nbsp;unit</th></tr></thead>
+        <thead><tr><th>Type</th><th>Units</th><th>Total&nbsp;SF</th>
+          <th>Reno&nbsp;/&nbsp;unit</th><th>Exit&nbsp;$/SF</th></tr></thead>
         <tbody>
-          <tr><td>2 BR</td>
-            <td><input id="c2" value="12" inputmode="numeric"></td>
+          <tr><td>2 BR</td><td>12</td><td>12,480</td>
             <td><input id="reno2" value="36000" inputmode="numeric"></td>
-            <td><input id="price2" value="495000" inputmode="numeric"></td></tr>
-          <tr><td>3 BR</td>
-            <td><input id="c3" value="8" inputmode="numeric"></td>
+            <td><input id="psf2" value="476" inputmode="numeric"></td></tr>
+          <tr><td>3 BR</td><td>8</td><td>11,580</td>
             <td><input id="reno3" value="46000" inputmode="numeric"></td>
-            <td><input id="price3" value="625000" inputmode="numeric"></td></tr>
+            <td><input id="psf3" value="432" inputmode="numeric"></td></tr>
         </tbody>
       </table>
       <div class="mixtotal" id="mixtotal">&mdash;</div>
@@ -550,7 +553,7 @@
 
 <!-- COMPARE -->
 <section id="compare"><div class="wrap"><div class="card">
-  <h2><span class="num">05</span>Reactivation vs. Full Conversion</h2>
+  <h2><span class="num">06</span>Reactivation vs. Full Conversion</h2>
   <p class="lead">Same building, same ~$10.9M sellout &mdash; the two legal paths differ
   only in <b>cost, time, and risk</b>. Reactivating an existing recorded subdivision is
   far faster and cheaper than a ground-up conversion. Which one applies is settled by the
@@ -560,7 +563,7 @@
     <tbody id="cmp-body"></tbody>
   </table></div>
   <p class="tcap">Generated live from the model. Tap the path / scenario buttons in
-  section 04 to load any combination into the interactive model.</p>
+  section 05 to load any combination into the interactive model.</p>
 </div>
 
 <div class="card recommend">
@@ -568,20 +571,20 @@
   <div class="band" id="rec-band">&mdash;</div>
   <p id="rec-text">The reactivation path is materially better &mdash; roughly $4.3M
   profit in ~20 months versus $3.6M over ~33 months for a full conversion &mdash; and it
-  removes the binary conversion-approval risk entirely. But which path applies is a legal
-  fact, not a choice: it is settled by the preliminary title report. Treat reactivation
-  as the target, the conversion case as the fallback, and ordering title as the first
-  order of business.</p>
+  removes the binary conversion-approval risk entirely. The Assessor's 20 separate
+  condominium parcels support that path; the preliminary title report should confirm it.
+  Treat reactivation as the target, the conversion case as the fallback, and ordering
+  title as the first order of business.</p>
 </div></div></section>
 
 <!-- WATERFALL -->
 <section id="waterfall"><div class="wrap"><div class="card">
-  <h2><span class="num">06</span>LP Investor Waterfall</h2>
+  <h2><span class="num">07</span>LP Investor Waterfall</h2>
   <p class="lead">How the deal's equity and profit are distributed between the
   <b>LP investors</b> (the equity raise) and the <b>GP / sponsor</b> &mdash; return of
   capital, then a preferred return, then a residual split (the sponsor promote). The
   three structure inputs are editable; capital and profit flow <b>live from the model</b>
-  &mdash; change the path or scenario in section 04 and this updates with it.</p>
+  &mdash; change the path or scenario in section 05 and this updates with it.</p>
 
   <div class="wf-inputs">
     <div class="wfi"><label>GP Co-Investment</label>
@@ -647,7 +650,7 @@
 
 <!-- RISKS -->
 <section id="risks"><div class="wrap"><div class="card">
-  <h2><span class="num">07</span>Key Risks &amp; Contingencies</h2>
+  <h2><span class="num">08</span>Key Risks &amp; Contingencies</h2>
   <p class="lead">These items drive the spread between the cases &mdash; and the first
   one is the master variable.</p>
 
@@ -686,31 +689,31 @@
 
 <!-- NEXT STEPS -->
 <section id="next"><div class="wrap"><div class="card">
-  <h2><span class="num">08</span>Diligence Checklist &mdash; 12-Day Window</h2>
+  <h2><span class="num">09</span>Diligence Checklist &mdash; 12-Day Window</h2>
   <p class="lead">What to confirm before removing contingencies, to replace the model's
   assumptions with deal facts:</p>
   <ul class="checks">
-    <li>Order the preliminary title report &mdash; confirm whether a condominium plan / subdivision map is recorded (this decides reactivation vs. conversion).</li>
+    <li>Order the preliminary title report &mdash; confirm the recorded condominium plan / subdivision map (this decides reactivation vs. conversion).</li>
     <li>Confirm the 8734 Burnet HOA's corporate status (CA Secretary of State / Franchise Tax Board) and the cost to revive it.</li>
     <li>Obtain the City's Report (9A) and price the required work with a contractor.</li>
     <li>Get the rent roll &mdash; verify current income, occupancy, and lease terms on the 15 occupied units.</li>
     <li>Engage land-use / condominium counsel for a path opinion (reactivation feasibility, or a TTM timeline if conversion).</li>
     <li>Confirm tenant relocation exposure (amounts, categories, lease status) against the rent roll.</li>
     <li>Lock acquisition &amp; renovation loan terms (rate, points, LTC, term).</li>
-    <li>Pull the full MLS closed-condo comp set for 91343 to firm up the per-type exit values.</li>
+    <li>Pull the full MLS closed-condo comp set for 91343 to firm up the per-type exit $/SF.</li>
   </ul>
 </div></div></section>
 
 <footer><div class="wrap">
   <p><b>Preliminary, illustrative underwriting</b> prepared for the buyer's internal
   evaluation and partner discussions. All figures other than the contract price, the
-  unit mix, and disclosed escrow terms are estimates and assumptions, and are not a
-  representation, warranty, or guarantee of future results. Restoring or converting the
-  condominium structure is subject to title confirmation and, where applicable, City of
-  Los Angeles approval, and is not assured. Independent verification by qualified
-  land-use counsel, a licensed surveyor/engineer, a general contractor, and a CPA is
-  required before relying on any figure herein. This is not an offer to sell securities
-  or investment advice.</p>
+  unit mix, the Assessor square footage, and disclosed escrow terms are estimates and
+  assumptions, and are not a representation, warranty, or guarantee of future results.
+  Restoring or converting the condominium structure is subject to title confirmation
+  and, where applicable, City of Los Angeles approval, and is not assured. Independent
+  verification by qualified land-use counsel, a licensed surveyor/engineer, a general
+  contractor, and a CPA is required before relying on any figure herein. This is not an
+  offer to sell securities or investment advice.</p>
   <p class="src"><b>Sources.</b> Per-unit square footage, bed/bath &amp; the 20 APNs:
   Los Angeles County Office of the Assessor parcel records. Property, unit mix &amp;
   remarks: MLS listing one-line report (listing brokerage) and public listing
@@ -722,24 +725,28 @@
 </div></footer>
 
 <script>
-const F=0.62, PURCHASE=4100000;
-const FIX={acqClosingPct:1.25,c2:12,c3:8,loanLTC:65,loanPoints:1.5,sellingPct:6};
-function P(scn,path){return Object.assign({},FIX,scn,path);}
-const S_CONS={price2:455000,price3:575000,reno2:44000,reno3:56000,commonArea:280000,loanRate:10.0,rentalOffset:200000};
-const S_BASE={price2:495000,price3:625000,reno2:36000,reno3:46000,commonArea:200000,loanRate:9.0,rentalOffset:250000};
-const S_UP  ={price2:535000,price3:675000,reno2:30000,reno3:38000,commonArea:160000,loanRate:8.5,rentalOffset:300000};
+const F=0.62, PURCHASE=4100000, SF2=12480, SF3=11580, N2=12, N3=8;
+const FIX={acqClosingPct:1.25,loanLTC:65,loanPoints:1.5,sellingPct:6};
+function MK(scn,path){return Object.assign({},FIX,scn,path);}
+const S_CONS={psf2:438,psf3:397,reno2:44000,reno3:56000,commonArea:280000,loanRate:10.0,rentalOffset:200000};
+const S_BASE={psf2:476,psf3:432,reno2:36000,reno3:46000,commonArea:200000,loanRate:9.0,rentalOffset:250000};
+const S_UP  ={psf2:514,psf3:466,reno2:30000,reno3:38000,commonArea:160000,loanRate:8.5,rentalOffset:300000};
 const PRESETS={
-  react_conservative:P(S_CONS,{convSoftPerUnit:11000,relocPerUnit:14000,city9a:250000,timeline:26,propCarry:210000}),
-  react_base:        P(S_BASE,{convSoftPerUnit:8000, relocPerUnit:10000,city9a:150000,timeline:20,propCarry:150000}),
-  react_upside:      P(S_UP,  {convSoftPerUnit:6000, relocPerUnit:7000, city9a:75000, timeline:16,propCarry:110000}),
-  conv_conservative: P(S_CONS,{convSoftPerUnit:28000,relocPerUnit:22000,city9a:300000,timeline:42,propCarry:330000}),
-  conv_base:         P(S_BASE,{convSoftPerUnit:22000,relocPerUnit:16000,city9a:150000,timeline:33,propCarry:250000}),
-  conv_upside:       P(S_UP,  {convSoftPerUnit:18000,relocPerUnit:12000,city9a:75000, timeline:27,propCarry:200000})
+  react_conservative:MK(S_CONS,{convSoftPerUnit:11000,relocPerUnit:14000,city9a:250000,timeline:26,propCarry:210000}),
+  react_base:        MK(S_BASE,{convSoftPerUnit:8000, relocPerUnit:10000,city9a:150000,timeline:20,propCarry:150000}),
+  react_upside:      MK(S_UP,  {convSoftPerUnit:6000, relocPerUnit:7000, city9a:75000, timeline:16,propCarry:110000}),
+  conv_conservative: MK(S_CONS,{convSoftPerUnit:28000,relocPerUnit:22000,city9a:300000,timeline:42,propCarry:330000}),
+  conv_base:         MK(S_BASE,{convSoftPerUnit:22000,relocPerUnit:16000,city9a:150000,timeline:33,propCarry:250000}),
+  conv_upside:       MK(S_UP,  {convSoftPerUnit:18000,relocPerUnit:12000,city9a:75000, timeline:27,propCarry:200000})
 };
-const IDS=['acqClosingPct','c2','c3','reno2','reno3','price2','price3','commonArea',
-  'convSoftPerUnit','relocPerUnit','city9a','loanLTC','loanRate','loanPoints','sellingPct',
-  'propCarry','rentalOffset','timeline'];
+const IDS=['acqClosingPct','reno2','reno3','psf2','psf3','commonArea','convSoftPerUnit',
+  'relocPerUnit','city9a','loanLTC','loanRate','loanPoints','sellingPct','propCarry',
+  'rentalOffset','timeline'];
 const WIDS=['gpCoinvest','prefRate','lpSplit'];
+// 20 units: [type(2|3), sqft] in schedule order
+const SCHED=[[3,1530],[2,1040],[2,1040],[2,1040],[2,1040],[3,1380],[3,1380],[2,1040],
+  [2,1040],[3,1500],[3,1530],[2,1040],[2,1040],[2,1040],[2,1040],[3,1380],[3,1380],
+  [2,1040],[2,1040],[3,1500]];
 let curPath='react', curScen='base';
 
 function $(id){return document.getElementById(id);}
@@ -748,9 +755,9 @@ function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
 function money1(v){return '$'+(v/1e6).toFixed(2)+'M';}
 
 function compute(p){
-  const units=p.c2+p.c3;
-  const unitReno=p.c2*p.reno2+p.c3*p.reno3;
-  const sellout=p.c2*p.price2+p.c3*p.price3;
+  const units=N2+N3;
+  const unitReno=N2*p.reno2+N3*p.reno3;
+  const sellout=SF2*p.psf2+SF3*p.psf3;
   const acqClosing=PURCHASE*p.acqClosingPct/100;
   const convSoft=p.convSoftPerUnit*units;
   const reloc=p.relocPerUnit*units;
@@ -784,8 +791,9 @@ function render(){
   $('r-roe').textContent=(r.roe*100).toFixed(0)+'%';
   $('r-ann').textContent=(r.ann*100).toFixed(0)+'%';
   $('r-margin').textContent=(r.margin*100).toFixed(0)+'%';
-  $('mixtotal').textContent='Total: '+r.units+' units  ·  sellout '+money(r.sellout)
-    +'  ·  blended '+money(r.units>0?r.sellout/r.units:0)+'/unit';
+  const ex2=SF2/N2*p.psf2, ex3=SF3/N3*p.psf3;
+  $('mixtotal').textContent='Exit value: 2BR ≈ '+money(ex2)+'/unit  ·  3BR ≈ '
+    +money(ex3)+'/unit avg  ·  Sellout '+money(r.sellout);
   $('u-purchase').textContent=money(PURCHASE);
   $('u-acq').textContent=money(r.acqClosing);
   $('u-reno').textContent=money(r.unitReno);
@@ -801,8 +809,17 @@ function render(){
   $('u-sellout').textContent=money(r.sellout);
   $('r-loan').textContent=money(r.loan);
   $('r-equity').textContent=money(r.equity);
-  $('mix-note').textContent='Sellout:  '+p.c2+'× 2BR @ '+money(p.price2)
-    +'   ·   '+p.c3+'× 3BR @ '+money(p.price3);
+  $('mix-note').textContent='Sellout = 2BR 12,480 SF × $'+p.psf2+'/SF  +  '
+    +'3BR 11,580 SF × $'+p.psf3+'/SF';
+  // unit schedule exit values (each unit SF × its type $/SF)
+  let schedTot=0;
+  SCHED.forEach((u,i)=>{
+    const ex=u[1]*(u[0]===2?p.psf2:p.psf3);
+    schedTot+=ex;
+    $('ux'+(i+1)).textContent=money(ex);
+  });
+  $('sched-total').textContent=money(schedTot);
+  $('sched-psf').textContent='2BR $'+p.psf2+'/SF, 3BR $'+p.psf3+'/SF';
   fillWaterfall(r.equity,r.profit,p.timeline/12);
 }
 
