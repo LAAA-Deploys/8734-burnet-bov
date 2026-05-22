@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0a2540">
-<title>8734-8736 Burnet Ave — Acquisition &amp; Rental Underwriting</title>
+<title>8734-8736 Burnet Ave — Condominium Sell-Out Analysis</title>
 <style>
   :root{
     --navy:#0a2540; --navy2:#143b6b; --gold:#b8985a;
@@ -75,6 +75,23 @@
   .psf{font-weight:700;color:var(--navy)}
   .right{text-align:right}
   .tcap{font-size:12px;color:var(--sub);margin-top:8px}
+
+  .dl{display:flex;align-items:center;gap:14px;text-decoration:none;
+    background:linear-gradient(135deg,#0a2540,#143b6b);color:#fff;border:1px solid var(--navy);
+    border-left:4px solid var(--gold);border-radius:8px;padding:14px 18px;margin:8px 0 6px;
+    transition:transform .08s ease,box-shadow .12s ease}
+  .dl:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(10,37,64,.18)}
+  .dl .dl-ic{flex:none;font-size:12px;font-weight:800;letter-spacing:.03em;color:#1c2b1c;
+    background:linear-gradient(135deg,#b8985a,#cdb079);border-radius:6px;padding:11px 12px;white-space:nowrap}
+  .dl .dl-tx{flex:1;line-height:1.35;min-width:0}
+  .dl .dl-tx b{font-size:14.5px;color:#fff;display:block}
+  .dl .dl-tx span{font-size:12px;color:#c4cedb;display:block;margin-top:2px}
+  .dl .dl-go{flex:none;font-size:12.5px;font-weight:700;color:var(--gold);white-space:nowrap}
+
+  .callout{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);
+    border-radius:8px;padding:15px 18px;margin:16px 0}
+  .callout .ct{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:800}
+  .callout p{font-size:14px;color:#33414f;margin:5px 0 0}
 
   .badge{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:10px;
     text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
@@ -232,12 +249,12 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">Acquisition &amp; Rental Underwriting</div>
+    <div class="eyebrow">Acquisition &amp; Condominium Sell-Out</div>
     <h1>8734-8736 Burnet Avenue</h1>
-    <div class="subtitle">20-Unit Townhome Acquisition &rarr; Hold-as-Rental Plan &middot; North Hills, Los Angeles, CA 91343</div>
+    <div class="subtitle">20-Unit Townhome Acquisition &rarr; Individual Condominium Sell-Out &middot; North Hills, Los Angeles, CA 91343</div>
     <div class="meta">
       <span>Prepared for <b>Filip Niculete</b></span>
-      <span>Buyer-side underwriting</span>
+      <span>For-sale / merchant-build underwriting</span>
       <span>DD update: <b>May 21, 2026</b></span>
       <span>Basis: <b>Fully Executed PSA</b></span>
     </div>
@@ -246,14 +263,14 @@
 
 <nav><div class="wrap">
   <a href="#deal">The Deal</a>
-  <a href="#plan">Rental Plan</a>
-  <a href="#rentcomps">Rent Comps</a>
-  <a href="#units">Unit Schedule</a>
-  <a href="#strategy">Condo Option</a>
+  <a href="#strategy">The Plan</a>
   <a href="#comps">For-Sale Comps</a>
-  <a href="#model">Return Model</a>
+  <a href="#model">Sell-Out Model</a>
+  <a href="#units">Unit Schedule</a>
   <a href="#compare">Two Paths</a>
   <a href="#waterfall">Waterfall</a>
+  <a href="#plan">Interim Income</a>
+  <a href="#rentcomps">Rent Comps</a>
   <a href="#risks">Risks</a>
   <a href="#next">Next Steps</a>
 </div></nav>
@@ -271,8 +288,20 @@
   are currently vacant</b>. The County Assessor records all 20 units as <b>separate
   condominium parcels</b> (APNs 2654-007-167 to -186), built 1990; per the listing the
   homeowners' association ("8734 Burnet HOA") went dormant when the seller consolidated
-  all 20 units in 2008. The business plan: restore the condominium structure, renovate,
-  and sell the units individually.</p>
+  all 20 units in 2008. <b>The business plan is a for-sale condominium sell-out:</b> acquire
+  the building at a rental basis (~$205,000/unit), restore the condominium structure,
+  renovate, and <b>sell the 20 units individually</b> at retail condo pricing
+  (~$495K&ndash;$680K each). In-place rents carry the property during the sell-out &mdash;
+  this is a merchant-build / for-sale play, <b>not a long-term rental hold</b>.</p>
+
+  <div class="callout">
+    <div class="ct">The Plan &mdash; in one line</div>
+    <p>Buy 20 townhomes wholesale at <b>$205K/unit</b>, restore the recorded condominium map,
+    light-renovate, and retail them out one-by-one at <b>~$430&ndash;$476/SF</b> &mdash; a
+    <b>~$10.9M sell-out</b> against a ~$5.5&ndash;6.0M all-in basis. The 20-parcel condo
+    subdivision is already recorded at the Assessor, so the path is HOA reactivation, not a
+    ground-up conversion. Detailed in Sections 02&ndash;07.</p>
+  </div>
 
   <div class="specs">
     <div class="spec"><div class="k">Counter Price</div><div class="v">$4,100,000</div></div>
@@ -293,22 +322,406 @@
   envelope 1ED3F854) and seller DD delivery.</p>
 </div></div></section>
 
-<!-- HOLD-AS-RENTAL PLAN -->
+<!-- THE PLAN: CONDO SELL-OUT -->
+<section id="strategy"><div class="wrap"><div class="card">
+  <h2><span class="num">02</span>The Plan: Condominium Sell-Out</h2>
+  <p class="lead"><b>This is the business plan &mdash; buy wholesale, sell retail.</b> The
+  entire return is the spread between the rental-basis acquisition (~$205K/unit) and the
+  for-sale value of a renovated condominium (~$495K for a 2BR, ~$625K for a 3BR). The 20
+  units are <b>already recorded as separate condominium parcels</b> at the County Assessor
+  (APNs 2654-007-167 to -186), so the path is reviving the dormant 8734 Burnet HOA and
+  selling the units individually &mdash; <b>not</b> stabilizing and holding a rental. In-place
+  rents (Section 08) simply carry the property while the units are renovated and sold off.
+  <b>How the spread is captured depends on the legal path:</b> the Assessor and listing
+  indicate the subdivision is already in place &mdash; a fast HOA reactivation &mdash; but if
+  the title report shows otherwise it becomes a full Tentative-Tract-Map conversion. The
+  model in Section 04 lets you compare both.</p>
+  <div class="steps">
+    <div class="step"><div class="n">Step 1 &mdash; Buy</div><h3>Acquire</h3>
+      <p>Close the 20-unit building all-cash per the counter, funded with an acquisition
+      &amp; renovation loan plus equity.</p></div>
+    <div class="step"><div class="n">Step 2 &mdash; Restore</div><h3>Reactivate / Convert</h3>
+      <p>Confirm the recorded 1990 subdivision and revive the dormant 8734 Burnet HOA
+      &mdash; or, if no map is on record, file a Tentative Tract Map.</p></div>
+    <div class="step"><div class="n">Step 3 &mdash; Renovate</div><h3>Improve</h3>
+      <p>Moderate per-unit refresh (kitchens, baths, finishes). Electrical panels are
+      already replaced &mdash; one major item off the list.</p></div>
+    <div class="step"><div class="n">Step 4 &mdash; Sell</div><h3>Retail Out</h3>
+      <p>Market and <b>sell 20 individual condominiums</b>, repaying the loan and returning
+      equity plus profit as units close. This is the exit &mdash; not a refinance-and-hold.</p></div>
+  </div>
+  <div class="callout" style="margin-top:18px">
+    <div class="ct">Why sell, not hold</div>
+    <p>At a ~$5.5&ndash;6.0M all-in basis and a <b>~$10.9M sell-out</b>, the for-sale exit
+    realizes the condominium premium in <b>~20 months</b> rather than waiting years for a
+    rental ramp to be capitalized. The recorded subdivision is the unlock &mdash; most 20-unit
+    buildings can't be sold off piece-by-piece; this one can.</p>
+  </div>
+</div></div></section>
+
+<!-- COMPS -->
+<section id="comps"><div class="wrap"><div class="card">
+  <h2><span class="num">03</span>For-Sale Comp Analysis</h2>
+  <p class="lead">Finished-product evidence: what renovated condominiums trade for in
+  North Hills (91343). The value argument is finished-condo $/SF by unit type &mdash;
+  the same $/SF that drives the exit values in the model.</p>
+
+  <h3 style="font-size:14px;color:var(--navy);margin:14px 0 4px">Closed Sales &mdash; North Hills Condos (2025)</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Address</th><th>Status</th><th>BD/BA</th><th>SF</th>
+      <th class="right">Price</th><th class="right">$/SF</th><th>Sold</th></tr></thead>
+    <tbody>
+      <tr><td>8601 Burnet Ave #D</td><td><span class="badge b-closed">Closed</span></td>
+        <td>2 / 2</td><td>948</td><td class="right">$465,000</td>
+        <td class="right psf">$491</td><td>Nov 26, 2025</td></tr>
+      <tr><td>8958 Burnet Ave #A1</td><td><span class="badge b-closed">Closed</span></td>
+        <td>2 / 3</td><td>&mdash;</td><td class="right">$525,000</td>
+        <td class="right psf">&mdash;</td><td>Nov 5, 2025</td></tr>
+      <tr><td>9140 Burnet Ave #3</td><td><span class="badge b-closed">Closed</span></td>
+        <td>2 / 3</td><td>1,275</td><td class="right">$512,500</td>
+        <td class="right psf">$402</td><td>Sep 29, 2025</td></tr>
+      <tr><td>9438 Burnet Ave</td><td><span class="badge b-closed">Closed</span></td>
+        <td>3 / 2.5</td><td>1,518</td><td class="right">$679,990</td>
+        <td class="right psf">$448</td><td>Jun 27, 2025</td></tr>
+      <tr><td>9431 N Sepulveda Blvd #1</td><td><span class="badge b-closed">Closed</span></td>
+        <td>3 / 2.5</td><td>1,307</td><td class="right">$520,000</td>
+        <td class="right psf">$398</td><td>Jun 24, 2025</td></tr>
+      <tr><td>9834 Sepulveda Blvd #112</td><td><span class="badge b-closed">Closed</span></td>
+        <td>2 / 2</td><td>909</td><td class="right">$445,000</td>
+        <td class="right psf">$490</td><td>Jun 23, 2025</td></tr>
+      <tr><td>15108 Plummer St #9</td><td><span class="badge b-closed">Closed</span></td>
+        <td>4 / 3</td><td>1,885</td><td class="right">$692,500</td>
+        <td class="right psf">$367</td><td>Feb 14, 2025</td></tr>
+    </tbody>
+  </table></div>
+  <p class="tcap">Seven closed condo sales in 91343, 2025. The 2BR comps (8601 Burnet,
+  9834 Sepulveda) and mid-size 3BR comps (9438 Burnet, 9431 Sepulveda) are the closest
+  profile match to the subject's units.</p>
+
+  <h3 style="font-size:14px;color:var(--navy);margin:20px 0 4px">Active Listings &amp; New-Construction Competition</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Address</th><th>Status</th><th>BD/BA</th><th>SF</th>
+      <th class="right">Price</th><th class="right">$/SF</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>8530 Burnet Ave #107</td><td><span class="badge b-active">Active</span></td>
+        <td>3 / 3</td><td>1,284</td><td class="right">$570,000</td>
+        <td class="right psf">$444</td><td>Direct profile match</td></tr>
+      <tr><td>9354 Burnet Ave #111</td><td><span class="badge b-active">Active</span></td>
+        <td>3 / 3</td><td>&mdash;</td><td class="right">$724,900</td>
+        <td class="right psf">&mdash;</td><td>Burnet Ave condo</td></tr>
+      <tr><td>9800 Sepulveda Blvd #38</td><td><span class="badge b-active">Active</span></td>
+        <td>2 / 2</td><td>1,039</td><td class="right">$429,500</td>
+        <td class="right psf">$413</td><td>2BR, ~subject SF</td></tr>
+      <tr><td>Valley Villas &mdash; Plan 2/3 (9433 Sepulveda)</td>
+        <td><span class="badge b-new">New Constr.</span></td>
+        <td>3 / 2.5</td><td>1,482-1,518</td><td class="right">$697-705K</td>
+        <td class="right psf">~$465-472</td><td>75-unit project</td></tr>
+    </tbody>
+  </table></div>
+  <p class="tcap">North Hills median ~$453-463/SF (Feb-Apr 2026). Comp set is preliminary,
+  from public listing aggregators &mdash; expand and verify with full MLS closed sales
+  before removing contingencies.</p>
+
+  <div class="tk-grid" style="margin-top:18px">
+    <div class="tk"><div class="n">Takeaway 1</div>
+      <p>Closed 2025 condo sales in 91343 span <b>~$367-$491/SF</b>; 2BR units cluster
+      ~$445-490/SF and mid-size 3BR units ~$400-450/SF.</p></div>
+    <div class="tk"><div class="n">Takeaway 2</div>
+      <p>The model base-cases the exits at <b>$476/SF (2BR)</b> and <b>$432/SF (3BR)</b>
+      &mdash; well inside the comp band, conservative against new construction at
+      ~$465-472/SF.</p></div>
+    <div class="tk"><div class="n">Takeaway 3</div>
+      <p><b>Absorption risk is real:</b> Valley Villas is delivering 75 brand-new condos
+      in the same ZIP &mdash; direct competition for the 3BR sell-out.</p></div>
+    <div class="tk"><div class="n">Takeaway 4</div>
+      <p>Acquisition at $205K/unit vs. a blended finished basis near $547K/unit is the
+      <b>condominium arbitrage</b> &mdash; the entire thesis.</p></div>
+  </div>
+</div></div></section>
+
+<!-- RETURN MODEL -->
+<section id="model"><div class="wrap"><div class="card">
+  <h2><span class="num">04</span>Interactive Sell-Out Return Model</h2>
+  <p class="lead">Pick a <b>legal path</b> and a <b>scenario</b>. The $4.1M price, the
+  12&times;2BR / 8&times;3BR mix and the Assessor square footage are
+  <span class="pill p-src">Sourced</span> and fixed; <b>exit values are computed as each
+  type's total SF &times; an editable $/SF</b>. Every other figure is an editable
+  <span class="pill p-assume">Assumption</span> that recomputes the return live.</p>
+
+  <div class="toggle-label">Legal Path</div>
+  <div class="presets">
+    <button id="pp-react" onclick="setPath('react')">Reactivation</button>
+    <button id="pp-conv" onclick="setPath('conv')">Full Conversion</button>
+  </div>
+  <div class="toggle-label">Execution Scenario</div>
+  <div class="presets">
+    <button id="pb-conservative" onclick="setScen('conservative')">Conservative</button>
+    <button id="pb-base" onclick="setScen('base')">Base Case</button>
+    <button id="pb-upside" onclick="setScen('upside')">Upside</button>
+  </div>
+
+  <div class="model">
+    <div class="mcol">
+      <h3>Acquisition</h3>
+      <div class="field locked"><label>Purchase price <span class="hint">Seller Counter No. 1</span></label>
+        <input id="purchase" value="4100000" inputmode="numeric" disabled></div>
+      <div class="field"><label>Acq. closing costs <span class="hint">% of price</span></label>
+        <input id="acqClosingPct" value="1.25" inputmode="decimal"></div>
+
+      <h3>Unit Mix &amp; Exit Pricing</h3>
+      <table class="mixtable">
+        <thead><tr><th>Type</th><th>Units</th><th>Total&nbsp;SF</th>
+          <th>Reno&nbsp;/&nbsp;unit</th><th>Exit&nbsp;$/SF</th></tr></thead>
+        <tbody>
+          <tr><td>2 BR</td><td>12</td><td>12,480</td>
+            <td><input id="reno2" value="36000" inputmode="numeric"></td>
+            <td><input id="psf2" value="476" inputmode="numeric"></td></tr>
+          <tr><td>3 BR</td><td>8</td><td>11,580</td>
+            <td><input id="reno3" value="46000" inputmode="numeric"></td>
+            <td><input id="psf3" value="432" inputmode="numeric"></td></tr>
+        </tbody>
+      </table>
+      <div class="mixtotal" id="mixtotal">&mdash;</div>
+
+      <h3>Restoration &amp; Site Costs</h3>
+      <div class="field"><label>Common area / exterior <span class="hint">total $</span></label>
+        <input id="commonArea" value="200000" inputmode="numeric"></div>
+      <div class="field"><label>HOA / map / DRE soft cost / unit <span class="hint">path-dependent</span></label>
+        <input id="convSoftPerUnit" value="8000" inputmode="numeric"></div>
+      <div class="field"><label>Tenant relocation / unit <span class="hint">blended over 20 (5 vacant)</span></label>
+        <input id="relocPerUnit" value="10000" inputmode="numeric"></div>
+      <div class="field"><label>City 9A required work <span class="hint">scope TBD &mdash; total $</span></label>
+        <input id="city9a" value="150000" inputmode="numeric"></div>
+
+      <h3>Financing</h3>
+      <div class="field"><label>Loan-to-cost <span class="hint">% of hard project cost</span></label>
+        <input id="loanLTC" value="65" inputmode="decimal"></div>
+      <div class="field"><label>Loan interest rate <span class="hint">% annual, I/O</span></label>
+        <input id="loanRate" value="9.0" inputmode="decimal"></div>
+      <div class="field"><label>Loan points <span class="hint">% origination fee</span></label>
+        <input id="loanPoints" value="1.5" inputmode="decimal"></div>
+
+      <h3>Sale &amp; Carry</h3>
+      <div class="field"><label>Selling costs <span class="hint">% of sellout</span></label>
+        <input id="sellingPct" value="6" inputmode="decimal"></div>
+      <div class="field"><label>Property carry <span class="hint">tax/ins/util total $</span></label>
+        <input id="propCarry" value="150000" inputmode="numeric"></div>
+      <div class="field"><label>Rental income offset <span class="hint">net, during hold</span></label>
+        <input id="rentalOffset" value="250000" inputmode="numeric"></div>
+      <div class="field"><label>Project timeline <span class="hint">months, buy to last sale</span></label>
+        <input id="timeline" value="20" inputmode="numeric"></div>
+    </div>
+
+    <div class="mcol">
+      <div class="result-hero">
+        <div class="k">Projected Net Profit</div>
+        <div class="big" id="r-profit">&mdash;</div>
+        <div class="sub" id="r-profit-sub">&mdash;</div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="k">Equity Multiple</div><div class="v" id="r-em">&mdash;</div></div>
+        <div class="metric"><div class="k">Return on Equity</div><div class="v" id="r-roe">&mdash;</div></div>
+        <div class="metric"><div class="k">Annualized ROE</div><div class="v" id="r-ann">&mdash;</div></div>
+        <div class="metric"><div class="k">Profit Margin</div><div class="v" id="r-margin">&mdash;</div></div>
+      </div>
+      <div class="uses">
+        <div class="row"><span>Acquisition price</span><span id="u-purchase">&mdash;</span></div>
+        <div class="row sub"><span>Acquisition closing costs</span><span id="u-acq">&mdash;</span></div>
+        <div class="row sub"><span>Unit renovation (all 20)</span><span id="u-reno">&mdash;</span></div>
+        <div class="row sub"><span>Common area / exterior</span><span id="u-common">&mdash;</span></div>
+        <div class="row sub"><span>HOA / map / DRE soft costs</span><span id="u-conv">&mdash;</span></div>
+        <div class="row sub"><span>Tenant relocation</span><span id="u-reloc">&mdash;</span></div>
+        <div class="row sub"><span>City 9A work</span><span id="u-9a">&mdash;</span></div>
+        <div class="row sub"><span>Loan fee + interest carry</span><span id="u-fin">&mdash;</span></div>
+        <div class="row sub"><span>Property carry</span><span id="u-carry">&mdash;</span></div>
+        <div class="row sub"><span>Selling costs</span><span id="u-sell">&mdash;</span></div>
+        <div class="row rev"><span>Less: rental income during hold</span><span id="u-rent">&mdash;</span></div>
+        <div class="row tot"><span>Total net project cost</span><span id="u-total">&mdash;</span></div>
+        <div class="row rev"><span>Condominium sellout (revenue)</span><span id="u-sellout">&mdash;</span></div>
+      </div>
+      <p class="small" id="mix-note" style="margin-top:8px">&mdash;</p>
+      <div class="metrics" style="margin-top:6px">
+        <div class="metric"><div class="k">Acq. + Reno Loan</div><div class="v" id="r-loan" style="font-size:18px">&mdash;</div></div>
+        <div class="metric"><div class="k">Equity Required</div><div class="v" id="r-equity" style="font-size:18px">&mdash;</div></div>
+      </div>
+      <p class="small" style="margin-top:10px">Interest carry is modeled on a declining
+      loan balance as units sell (≈62% average outstanding). "Equity required" is peak
+      equity, simplified. Annualized ROE is total ROE &divide; years; a true IRR requires
+      a unit-by-unit absorption schedule.</p>
+    </div>
+  </div>
+</div></div></section>
+
+<!-- UNIT SCHEDULE -->
+<section id="units"><div class="wrap"><div class="card">
+  <h2><span class="num">05</span>Unit Schedule &amp; Rent Roll</h2>
+  <p class="lead">All 20 units are <b>separate condominium parcels</b> at the LA County
+  Assessor &mdash; two identical 10-unit buildings, built 1990. Per-unit square footage is
+  from Assessor records; the <b>Est. Exit Value</b> column is each unit's SF &times; the
+  sell-out model's current exit $/SF &mdash; i.e., the retail price each condo is sold for.
+  For in-place vs. market rent and the interim rental carry, see Section 08. The five vacant
+  units (per the certified April 2026 rent roll) are all in the 8736 building &mdash; the
+  natural first units to deliver and sell: <b>#1, #2, #3, #4, #6</b>.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>#</th><th>Unit</th><th>APN</th><th>Mix</th>
+      <th class="right">SqFt</th><th class="right">Est. Exit Value</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>8734 Burnet Ave #1</td><td>2654-007-167</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux1">&mdash;</td></tr>
+      <tr><td>2</td><td>8734 Burnet Ave #2</td><td>2654-007-168</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux2">&mdash;</td></tr>
+      <tr><td>3</td><td>8734 Burnet Ave #3</td><td>2654-007-169</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux3">&mdash;</td></tr>
+      <tr><td>4</td><td>8734 Burnet Ave #4</td><td>2654-007-170</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux4">&mdash;</td></tr>
+      <tr><td>5</td><td>8734 Burnet Ave #5</td><td>2654-007-171</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux5">&mdash;</td></tr>
+      <tr><td>6</td><td>8734 Burnet Ave #6</td><td>2654-007-172</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux6">&mdash;</td></tr>
+      <tr><td>7</td><td>8734 Burnet Ave #7</td><td>2654-007-173</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux7">&mdash;</td></tr>
+      <tr><td>8</td><td>8734 Burnet Ave #8</td><td>2654-007-174</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux8">&mdash;</td></tr>
+      <tr><td>9</td><td>8734 Burnet Ave #9</td><td>2654-007-175</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux9">&mdash;</td></tr>
+      <tr><td>10</td><td>8734 Burnet Ave #10</td><td>2654-007-176</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux10">&mdash;</td></tr>
+      <tr><td>11</td><td>8736 Burnet Ave #1</td><td>2654-007-177</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux11">&mdash;</td></tr>
+      <tr><td>12</td><td>8736 Burnet Ave #2</td><td>2654-007-178</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux12">&mdash;</td></tr>
+      <tr><td>13</td><td>8736 Burnet Ave #3</td><td>2654-007-179</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux13">&mdash;</td></tr>
+      <tr><td>14</td><td>8736 Burnet Ave #4</td><td>2654-007-180</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux14">&mdash;</td></tr>
+      <tr><td>15</td><td>8736 Burnet Ave #5</td><td>2654-007-181</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux15">&mdash;</td></tr>
+      <tr><td>16</td><td>8736 Burnet Ave #6</td><td>2654-007-182</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux16">&mdash;</td></tr>
+      <tr><td>17</td><td>8736 Burnet Ave #7</td><td>2654-007-183</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux17">&mdash;</td></tr>
+      <tr><td>18</td><td>8736 Burnet Ave #8</td><td>2654-007-184</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux18">&mdash;</td></tr>
+      <tr><td>19</td><td>8736 Burnet Ave #9</td><td>2654-007-185</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux19">&mdash;</td></tr>
+      <tr><td>20</td><td>8736 Burnet Ave #10</td><td>2654-007-186</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux20">&mdash;</td></tr>
+      <tr style="font-weight:800;background:#fbf7ee">
+        <td colspan="4">Total &mdash; 20 units</td>
+        <td class="right">24,060</td><td class="right" id="sched-total">&mdash;</td></tr>
+    </tbody>
+  </table></div>
+  <p class="tcap">Est. Exit Value = each unit's Assessor square footage &times; the
+  model's current exit $/SF (<span id="sched-psf">&mdash;</span>) &mdash; it ties exactly
+  to the model sellout. Rent column populates from the seller's certified rent roll.</p>
+</div></div></section>
+
+<!-- COMPARE -->
+<section id="compare"><div class="wrap"><div class="card">
+  <h2><span class="num">06</span>Reactivation vs. Full Conversion</h2>
+  <p class="lead">Same building, same ~$10.9M sellout &mdash; the two legal paths differ
+  only in <b>cost, time, and risk</b>. Reactivating an existing recorded subdivision is
+  far faster and cheaper than a ground-up conversion. Which one applies is settled by the
+  preliminary title report.</p>
+  <div class="scroll"><table class="scn">
+    <thead><tr><th>Base-Case Outcome</th><th class="base">Reactivation</th><th>Full Conversion</th></tr></thead>
+    <tbody id="cmp-body"></tbody>
+  </table></div>
+  <p class="tcap">Generated live from the model. Tap the path / scenario buttons in
+  section 04 to load any combination into the interactive model.</p>
+</div>
+
+<div class="card recommend">
+  <h2>Bottom Line</h2>
+  <div class="band" id="rec-band">&mdash;</div>
+  <p id="rec-text"><b>The plan is the condominium sell-out</b> (Section 02) &mdash; buy the 20
+  townhomes at a $205K/door rental basis and retail them out as individual condos for a
+  ~$10.9M sell-out. Take the <b>reactivation path</b>: because the 20-parcel subdivision is
+  already recorded, reactivation is materially better than a ground-up conversion &mdash;
+  roughly <b>$4.3M profit in ~20 months</b> vs. $3.6M over ~33 months &mdash; and it removes
+  the binary conversion-approval risk entirely. The in-place rents (Section 08) are interim
+  carry during the sell-out, and a rental hold is the <b>downside fallback</b> if absorption
+  stalls (a 7.1% going-in cap on basis protects the basis either way). <b>Next step:</b> order
+  the preliminary title report to confirm the recorded condo plan.</p>
+</div></div></section>
+
+<!-- WATERFALL -->
+<section id="waterfall"><div class="wrap"><div class="card">
+  <h2><span class="num">07</span>LP Investor Waterfall <span style="font-size:12px;color:var(--sub);font-weight:600">(condo path)</span></h2>
+  <p class="lead">How the deal's equity and profit are distributed between the
+  <b>LP investors</b> (the equity raise) and the <b>GP / sponsor</b> &mdash; return of
+  capital, then a preferred return, then a residual split (the sponsor promote). The
+  three structure inputs are editable; capital and profit flow <b>live from the model</b>
+  &mdash; change the path or scenario in section 04 and this updates with it.</p>
+
+  <div class="wf-inputs">
+    <div class="wfi"><label>GP Co-Investment</label>
+      <div class="ib"><input id="gpCoinvest" value="10" inputmode="decimal"><span class="u">%</span></div></div>
+    <div class="wfi"><label>LP Preferred Return</label>
+      <div class="ib"><input id="prefRate" value="8" inputmode="decimal"><span class="u">% / yr</span></div></div>
+    <div class="wfi"><label>Residual Split to LP</label>
+      <div class="ib"><input id="lpSplit" value="70" inputmode="decimal"><span class="u">% (GP rest)</span></div></div>
+  </div>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Distribution Tier</th><th class="right">Amount</th>
+      <th class="right">To LP</th><th class="right">To GP</th></tr></thead>
+    <tbody>
+      <tr><td>Tier 1 &middot; Return of Capital</td>
+        <td class="right" id="wf-t1">&mdash;</td><td class="right" id="wf-t1-lp">&mdash;</td>
+        <td class="right" id="wf-t1-gp">&mdash;</td></tr>
+      <tr><td>Tier 2 &middot; Preferred Return</td>
+        <td class="right" id="wf-t2">&mdash;</td><td class="right" id="wf-t2-lp">&mdash;</td>
+        <td class="right" id="wf-t2-gp">&mdash;</td></tr>
+      <tr><td>Tier 3 &middot; Residual Split (promote)</td>
+        <td class="right" id="wf-t3">&mdash;</td><td class="right" id="wf-t3-lp">&mdash;</td>
+        <td class="right" id="wf-t3-gp">&mdash;</td></tr>
+      <tr style="font-weight:800;background:#fbf7ee">
+        <td>Total Distributions</td>
+        <td class="right" id="wf-tot">&mdash;</td><td class="right" id="wf-tot-lp">&mdash;</td>
+        <td class="right" id="wf-tot-gp">&mdash;</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="wfbar">
+    <div class="lp" id="wf-lpbar">LP</div>
+    <div class="gp" id="wf-gpbar">GP</div>
+  </div>
+  <p class="tcap">Share of total project profit &mdash; LP investors vs. GP/sponsor
+  (carried interest / promote).</p>
+
+  <div class="lpgp">
+    <div class="pc lp">
+      <h3>LP Investors</h3>
+      <div class="ln"><span>Capital invested</span><span id="lp-cap">&mdash;</span></div>
+      <div class="ln"><span>Total distributions</span><span id="lp-dist">&mdash;</span></div>
+      <div class="ln"><span>Net profit</span><span id="lp-profit">&mdash;</span></div>
+      <div class="ln"><span>Annualized return</span><span id="lp-ann">&mdash;</span></div>
+      <div class="ln big"><span>Equity multiple</span><span id="lp-mult">&mdash;</span></div>
+    </div>
+    <div class="pc gp">
+      <h3>GP / Sponsor</h3>
+      <div class="ln"><span>Co-investment</span><span id="gp-cap">&mdash;</span></div>
+      <div class="ln"><span>Total distributions</span><span id="gp-dist">&mdash;</span></div>
+      <div class="ln"><span>Net profit (incl. promote)</span><span id="gp-profit">&mdash;</span></div>
+      <div class="ln"><span>Annualized return</span><span id="gp-ann">&mdash;</span></div>
+      <div class="ln big"><span>Equity multiple</span><span id="gp-mult">&mdash;</span></div>
+    </div>
+  </div>
+
+  <p class="small" style="margin-top:14px">Standard structure shown: the preferred return
+  accrues pari passu on all equity (LP and GP co-investment), then residual profit splits
+  with a sponsor promote. Preferred return is simple (non-compounded) over the hold
+  period. Adjust the three inputs to the actual partnership terms. Illustrative only
+  &mdash; not an offer of securities.</p>
+</div></div></section>
+
+<!-- INTERIM INCOME / CURRENT OPERATIONS -->
 <section id="plan"><div class="wrap"><div class="card" style="border-top:4px solid var(--gold)">
   <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap">
     <span class="badge b-closed">Escrow Open</span>
     <span class="badge b-active">PSA Executed</span>
     <span class="badge b-new">DD Received 05/21/26</span>
   </div>
-  <h2><span class="num">02</span>Plan: Operate as 20-Unit Rental</h2>
-  <p class="lead">The contract closes as a <b>buy-and-hold rental acquisition</b> at the
-  fully-executed PSA price of <b>$4,100,000</b> &mdash; $205,000/unit, $170/SF. The full DD
-  package is in hand: certified April 2026 rent roll, 2022-2025 owner income statements,
-  recorded leases, property tax bills, insurance binder, and title work. <b>Plan: stabilize
-  as a 20-unit rental.</b> The condominium sell-out modeled in sections 05-09 is preserved
-  as an <i>optional later exit</i> &mdash; the recorded 20-parcel subdivision stays intact.</p>
+  <h2><span class="num">08</span>Interim Income &amp; Current Operations</h2>
+  <p class="lead">This is the income you acquire on day one &mdash; the in-place rents that
+  <b>carry the property during the condominium sell-out</b> (Section 02), and the downside
+  fallback if absorption stalls. The full DD package is in hand: certified April 2026 rent
+  roll, 2022-2025 owner income statements, recorded leases, property tax bills, insurance
+  binder, and title work. The acquisition basis is <b>$4,100,000</b> &mdash; $205,000/unit,
+  $170/SF. <b>If</b> the building were held as a straight rental rather than sold off, the
+  same basis would carry a 7.1% going-in cap on basis (the fallback case shown lower in this
+  section); the for-sale sell-out is the plan, this is the floor under it.</p>
 
-  <h3 style="font-size:15px;color:var(--navy);margin:18px 0 8px">Acquisition Confirmation</h3>
+  <a class="dl" href="files/8734-Burnet-Rent-Roll-and-Operating-Expenses.xlsx" download>
+    <span class="dl-ic">XLSX</span>
+    <span class="dl-tx"><b>Download: Current Rent Roll &amp; Operating Expenses</b>
+      <span>Seller-certified April 2026 rent roll &middot; 2025 operating-expense detail &middot;
+      2022&ndash;2025 income history &mdash; Excel workbook, 3 tabs</span></span>
+    <span class="dl-go">Download &rarr;</span>
+  </a>
+
+  <h3 style="font-size:15px;color:var(--navy);margin:18px 0 8px">Acquisition &amp; In-Place Snapshot</h3>
   <div class="specs">
     <div class="spec"><div class="k">PSA Price</div><div class="v">$4,100,000</div></div>
     <div class="spec"><div class="k">Status</div><div class="v">Escrow Open</div></div>
@@ -623,7 +1036,15 @@
   $56K combined repairs + plumbing was non-recurring catch-up). Source: <i>North Hills
   Wong LLC Annual Income Statements 2022-2025.xlsx</i>.</p>
 
-  <h3 style="font-size:15px;color:var(--navy);margin:22px 0 8px">5-Year Pro Forma</h3>
+  <h3 style="font-size:15px;color:var(--navy);margin:22px 0 8px">5-Year Pro Forma
+    <span style="font-size:11px;color:var(--sub);font-weight:600;margin-left:8px">Rental-hold fallback &mdash; not the base plan</span></h3>
+  <div class="callout" style="margin:0 0 12px">
+    <div class="ct">Fallback case only</div>
+    <p>The plan is to <b>sell the condos</b> (Section 02), not stabilize and hold. This pro
+    forma exists to show the floor: if the for-sale market softened and the units were held
+    as rentals instead, the same $4.1M basis still cap-rates at 7.1% going-in. It is the
+    downside, not the strategy.</p>
+  </div>
   <div class="scroll"><table class="scn">
     <thead><tr><th>Year</th><th class="right">Avg Rent/Unit</th>
       <th class="right">GSI</th><th class="right">EGI</th>
@@ -663,38 +1084,38 @@
   stabilized base.</p>
 
   <div class="metrics" style="grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px">
-    <div class="metric"><div class="k">5-Yr Equity Multiple</div>
-      <div class="v" style="color:var(--green)">2.7x</div></div>
-    <div class="metric"><div class="k">5-Yr IRR <span class="small">all-cash</span></div>
-      <div class="v" style="color:var(--green)">~21%</div></div>
+    <div class="metric"><div class="k">Fallback 5-Yr EM</div>
+      <div class="v">2.7x</div></div>
+    <div class="metric"><div class="k">Fallback 5-Yr IRR <span class="small">all-cash</span></div>
+      <div class="v">~21%</div></div>
     <div class="metric"><div class="k">Y5 NOI Growth</div>
       <div class="v">9.4x</div></div>
     <div class="metric"><div class="k">Y5 Exit <span class="small">@ 6.0% cap</span></div>
       <div class="v">$9.12M</div></div>
   </div>
-  <p class="small" style="margin-top:10px">All-cash IRR assumes acquisition $4.10M + $50K
-  closing + $200K initial turnover &amp; reno on the 5 vacant units, Y1-Y5 NOI per the
-  pro forma above, exit Y5 at 6.0% cap less 4% selling costs. The condominium sell-out in
-  sections 05-09 is preserved as a higher-return alternate exit if value-add absorption is
-  realized faster than this rental ramp.</p>
+  <p class="small" style="margin-top:10px">Fallback all-cash IRR assumes acquisition $4.10M +
+  $50K closing + $200K initial turnover &amp; reno on the 5 vacant units, Y1-Y5 NOI per the
+  pro forma above, exit Y5 at 6.0% cap less 4% selling costs. <b>The base plan &mdash; the
+  condominium sell-out in Sections 02&ndash;07 &mdash; targets a higher return over a much
+  shorter (~20-month) hold</b>; these rental figures are the downside reference only.</p>
 
   <div class="tk-grid" style="margin-top:18px">
-    <div class="tk"><div class="n">Why this works</div>
-      <p>$205K/unit in LA is single-digit GRM (12.6x in-place; <b>5.1x at market rents</b>).
-      The acquisition price reflects the seller's 2024-2025 vacancy and below-market in-
-      place &mdash; the value-add is finishing the vacancy fill the seller couldn't.</p></div>
-    <div class="tk"><div class="n">First 90 days</div>
-      <p>Lease up 5 vacant units at market ($16,725/mo new rent &asymp; $201K annualized).
-      Initiate eviction on 8734-4 (Tiani Potts &mdash; not paying her $854 S8 tenant
-      portion). Issue maximum AB 1482 rent increases on the 14 in-place leases.</p></div>
-    <div class="tk"><div class="n">Condo option preserved</div>
-      <p>The County records all 20 units as separate condominium parcels (APNs 167-186) &mdash;
-      the subdivision is already in place. Reactivating the HOA later (sections 05 + 08)
-      costs ~$160K and unlocks the $10.9M condominium sell-out modeled there.</p></div>
+    <div class="tk"><div class="n">The plan is to sell</div>
+      <p>The 20 units are recorded as separate condominium parcels (APNs 167-186) &mdash; the
+      subdivision is already in place. Reviving the HOA (Sections 02 + 06) costs ~$160K and
+      unlocks the <b>$10.9M sell-out</b>. Selling the units, not holding them, is the play.</p></div>
+    <div class="tk"><div class="n">Interim carry</div>
+      <p>The 15 occupied leases (~$324K/yr in-place GSI) carry property taxes, insurance, and
+      debt service <b>while units are renovated and sold off</b>. Lease the 5 vacants only as
+      needed to support carry &mdash; or deliver them vacant to sell first.</p></div>
+    <div class="tk"><div class="n">Why not just hold</div>
+      <p>A rental hold needs years of AB 1482 rent pushes before the value-add is capitalized.
+      The for-sale exit realizes the ~$5M condominium premium <b>now</b> &mdash; the recorded
+      map is exactly what most 20-unit buildings lack to do this.</p></div>
     <div class="tk"><div class="n">Downside protection</div>
-      <p>Even at <b>zero rent push</b> (Y1 vacancy-fill only, no AB 1482 increases), the
-      deal cap-rates at <b>7.1%</b> on basis &mdash; already accretive to LA multifamily
-      trades. The 13%+ stabilized cap is upside, not the requirement.</p></div>
+      <p>If the for-sale market softens, the same basis falls back to a <b>7.1% going-in cap</b>
+      (vacancy-fill only, no rent push) &mdash; already accretive to LA multifamily trades. The
+      sell-out is the upside; the rental floor protects the basis.</p></div>
   </div>
 
   <p class="small" style="margin-top:14px"><span class="pill p-src">Sourced</span>
@@ -705,8 +1126,8 @@
 
 <!-- RENT COMPS -->
 <section id="rentcomps"><div class="wrap"><div class="card">
-  <h2><span class="num">03</span>Rent Comps</h2>
-  <p class="lead">The market rents used in Section 02's pro forma are anchored by the
+  <h2><span class="num">09</span>Rent Comps</h2>
+  <p class="lead">The market rents used in Section 08's interim pro forma are anchored by the
   LAAA team's rent comp study (May 2026). The closest match is <b>8958 Burnet Ave</b>
   &mdash; same street, 1989 vintage, townhouse format with 2-car garage. Comp ranges
   bracket the indicated subject rent at the bottom of each table; underwriting uses the
@@ -840,367 +1261,6 @@
   active listings on Apartments.com, Zillow, and CoStar.</p>
 </div></div></section>
 
-<!-- UNIT SCHEDULE -->
-<section id="units"><div class="wrap"><div class="card">
-  <h2><span class="num">04</span>Unit Schedule &amp; Rent Roll</h2>
-  <p class="lead">All 20 units are <b>separate condominium parcels</b> at the LA County
-  Assessor &mdash; two identical 10-unit buildings, built 1990. Per-unit square footage is
-  from Assessor records; the <b>Est. Exit Value</b> column is each unit's SF &times; the
-  condo model's current exit $/SF (if the optional sell-out path is taken). For in-place
-  vs. market rent and the rental hold pro forma see section 02. The five vacant units (per
-  the certified April 2026 rent roll) are all in the 8736 building: <b>#1, #2, #3, #4, #6</b>.</p>
-  <div class="scroll"><table>
-    <thead><tr><th>#</th><th>Unit</th><th>APN</th><th>Mix</th>
-      <th class="right">SqFt</th><th class="right">Est. Exit Value</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>8734 Burnet Ave #1</td><td>2654-007-167</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux1">&mdash;</td></tr>
-      <tr><td>2</td><td>8734 Burnet Ave #2</td><td>2654-007-168</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux2">&mdash;</td></tr>
-      <tr><td>3</td><td>8734 Burnet Ave #3</td><td>2654-007-169</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux3">&mdash;</td></tr>
-      <tr><td>4</td><td>8734 Burnet Ave #4</td><td>2654-007-170</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux4">&mdash;</td></tr>
-      <tr><td>5</td><td>8734 Burnet Ave #5</td><td>2654-007-171</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux5">&mdash;</td></tr>
-      <tr><td>6</td><td>8734 Burnet Ave #6</td><td>2654-007-172</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux6">&mdash;</td></tr>
-      <tr><td>7</td><td>8734 Burnet Ave #7</td><td>2654-007-173</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux7">&mdash;</td></tr>
-      <tr><td>8</td><td>8734 Burnet Ave #8</td><td>2654-007-174</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux8">&mdash;</td></tr>
-      <tr><td>9</td><td>8734 Burnet Ave #9</td><td>2654-007-175</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux9">&mdash;</td></tr>
-      <tr><td>10</td><td>8734 Burnet Ave #10</td><td>2654-007-176</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux10">&mdash;</td></tr>
-      <tr><td>11</td><td>8736 Burnet Ave #1</td><td>2654-007-177</td><td>3 BR / 3 BA</td><td class="right psf">1,530</td><td class="right" id="ux11">&mdash;</td></tr>
-      <tr><td>12</td><td>8736 Burnet Ave #2</td><td>2654-007-178</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux12">&mdash;</td></tr>
-      <tr><td>13</td><td>8736 Burnet Ave #3</td><td>2654-007-179</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux13">&mdash;</td></tr>
-      <tr><td>14</td><td>8736 Burnet Ave #4</td><td>2654-007-180</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux14">&mdash;</td></tr>
-      <tr><td>15</td><td>8736 Burnet Ave #5</td><td>2654-007-181</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux15">&mdash;</td></tr>
-      <tr><td>16</td><td>8736 Burnet Ave #6</td><td>2654-007-182</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux16">&mdash;</td></tr>
-      <tr><td>17</td><td>8736 Burnet Ave #7</td><td>2654-007-183</td><td>3 BR / 3 BA</td><td class="right psf">1,380</td><td class="right" id="ux17">&mdash;</td></tr>
-      <tr><td>18</td><td>8736 Burnet Ave #8</td><td>2654-007-184</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux18">&mdash;</td></tr>
-      <tr><td>19</td><td>8736 Burnet Ave #9</td><td>2654-007-185</td><td>2 BR / 3 BA</td><td class="right psf">1,040</td><td class="right" id="ux19">&mdash;</td></tr>
-      <tr><td>20</td><td>8736 Burnet Ave #10</td><td>2654-007-186</td><td>3 BR / 3 BA</td><td class="right psf">1,500</td><td class="right" id="ux20">&mdash;</td></tr>
-      <tr style="font-weight:800;background:#fbf7ee">
-        <td colspan="4">Total &mdash; 20 units</td>
-        <td class="right">24,060</td><td class="right" id="sched-total">&mdash;</td></tr>
-    </tbody>
-  </table></div>
-  <p class="tcap">Est. Exit Value = each unit's Assessor square footage &times; the
-  model's current exit $/SF (<span id="sched-psf">&mdash;</span>) &mdash; it ties exactly
-  to the model sellout. Rent column populates from the seller's certified rent roll.</p>
-</div></div></section>
-
-<!-- STRATEGY -->
-<section id="strategy"><div class="wrap"><div class="card">
-  <h2><span class="num">05</span>Optional Upside: Condominium Sell-Out Strategy</h2>
-  <p class="lead"><b>Alternate exit, not the base plan.</b> The Section 02 rental hold is
-  the approved business plan; this section sizes the optional condo sell-out a future
-  owner could pursue. The return is the spread between the rental-basis acquisition
-  (~$205K/unit) and the for-sale value of a renovated condominium (~$495K for a 2BR,
-  ~$625K for a 3BR). <b>How that spread is captured depends on the legal path:</b> the
-  Assessor and listing indicate the subdivision is already in place &mdash; a fast HOA
-  reactivation &mdash; but if the title report shows otherwise it becomes a full
-  Tentative-Tract-Map conversion. The model below lets you compare both.</p>
-  <div class="steps">
-    <div class="step"><div class="n">Step 1 &mdash; Buy</div><h3>Acquire</h3>
-      <p>Close the 20-unit building all-cash per the counter, funded with an acquisition
-      &amp; renovation loan plus equity.</p></div>
-    <div class="step"><div class="n">Step 2 &mdash; Restore</div><h3>Reactivate / Convert</h3>
-      <p>Confirm the recorded 1990 subdivision and revive the dormant 8734 Burnet HOA
-      &mdash; or, if no map is on record, file a Tentative Tract Map.</p></div>
-    <div class="step"><div class="n">Step 3 &mdash; Renovate</div><h3>Improve</h3>
-      <p>Moderate per-unit refresh (kitchens, baths, finishes). Electrical panels are
-      already replaced &mdash; one major item off the list.</p></div>
-    <div class="step"><div class="n">Step 4 &mdash; Sell</div><h3>Retail Out</h3>
-      <p>Market and sell 20 individual condominiums, repaying the loan and returning
-      equity plus profit as units close.</p></div>
-  </div>
-</div></div></section>
-
-<!-- COMPS -->
-<section id="comps"><div class="wrap"><div class="card">
-  <h2><span class="num">06</span>For-Sale Comp Analysis</h2>
-  <p class="lead">Finished-product evidence: what renovated condominiums trade for in
-  North Hills (91343). The value argument is finished-condo $/SF by unit type &mdash;
-  the same $/SF that drives the exit values in the model.</p>
-
-  <h3 style="font-size:14px;color:var(--navy);margin:14px 0 4px">Closed Sales &mdash; North Hills Condos (2025)</h3>
-  <div class="scroll"><table>
-    <thead><tr><th>Address</th><th>Status</th><th>BD/BA</th><th>SF</th>
-      <th class="right">Price</th><th class="right">$/SF</th><th>Sold</th></tr></thead>
-    <tbody>
-      <tr><td>8601 Burnet Ave #D</td><td><span class="badge b-closed">Closed</span></td>
-        <td>2 / 2</td><td>948</td><td class="right">$465,000</td>
-        <td class="right psf">$491</td><td>Nov 26, 2025</td></tr>
-      <tr><td>8958 Burnet Ave #A1</td><td><span class="badge b-closed">Closed</span></td>
-        <td>2 / 3</td><td>&mdash;</td><td class="right">$525,000</td>
-        <td class="right psf">&mdash;</td><td>Nov 5, 2025</td></tr>
-      <tr><td>9140 Burnet Ave #3</td><td><span class="badge b-closed">Closed</span></td>
-        <td>2 / 3</td><td>1,275</td><td class="right">$512,500</td>
-        <td class="right psf">$402</td><td>Sep 29, 2025</td></tr>
-      <tr><td>9438 Burnet Ave</td><td><span class="badge b-closed">Closed</span></td>
-        <td>3 / 2.5</td><td>1,518</td><td class="right">$679,990</td>
-        <td class="right psf">$448</td><td>Jun 27, 2025</td></tr>
-      <tr><td>9431 N Sepulveda Blvd #1</td><td><span class="badge b-closed">Closed</span></td>
-        <td>3 / 2.5</td><td>1,307</td><td class="right">$520,000</td>
-        <td class="right psf">$398</td><td>Jun 24, 2025</td></tr>
-      <tr><td>9834 Sepulveda Blvd #112</td><td><span class="badge b-closed">Closed</span></td>
-        <td>2 / 2</td><td>909</td><td class="right">$445,000</td>
-        <td class="right psf">$490</td><td>Jun 23, 2025</td></tr>
-      <tr><td>15108 Plummer St #9</td><td><span class="badge b-closed">Closed</span></td>
-        <td>4 / 3</td><td>1,885</td><td class="right">$692,500</td>
-        <td class="right psf">$367</td><td>Feb 14, 2025</td></tr>
-    </tbody>
-  </table></div>
-  <p class="tcap">Seven closed condo sales in 91343, 2025. The 2BR comps (8601 Burnet,
-  9834 Sepulveda) and mid-size 3BR comps (9438 Burnet, 9431 Sepulveda) are the closest
-  profile match to the subject's units.</p>
-
-  <h3 style="font-size:14px;color:var(--navy);margin:20px 0 4px">Active Listings &amp; New-Construction Competition</h3>
-  <div class="scroll"><table>
-    <thead><tr><th>Address</th><th>Status</th><th>BD/BA</th><th>SF</th>
-      <th class="right">Price</th><th class="right">$/SF</th><th>Notes</th></tr></thead>
-    <tbody>
-      <tr><td>8530 Burnet Ave #107</td><td><span class="badge b-active">Active</span></td>
-        <td>3 / 3</td><td>1,284</td><td class="right">$570,000</td>
-        <td class="right psf">$444</td><td>Direct profile match</td></tr>
-      <tr><td>9354 Burnet Ave #111</td><td><span class="badge b-active">Active</span></td>
-        <td>3 / 3</td><td>&mdash;</td><td class="right">$724,900</td>
-        <td class="right psf">&mdash;</td><td>Burnet Ave condo</td></tr>
-      <tr><td>9800 Sepulveda Blvd #38</td><td><span class="badge b-active">Active</span></td>
-        <td>2 / 2</td><td>1,039</td><td class="right">$429,500</td>
-        <td class="right psf">$413</td><td>2BR, ~subject SF</td></tr>
-      <tr><td>Valley Villas &mdash; Plan 2/3 (9433 Sepulveda)</td>
-        <td><span class="badge b-new">New Constr.</span></td>
-        <td>3 / 2.5</td><td>1,482-1,518</td><td class="right">$697-705K</td>
-        <td class="right psf">~$465-472</td><td>75-unit project</td></tr>
-    </tbody>
-  </table></div>
-  <p class="tcap">North Hills median ~$453-463/SF (Feb-Apr 2026). Comp set is preliminary,
-  from public listing aggregators &mdash; expand and verify with full MLS closed sales
-  before removing contingencies.</p>
-
-  <div class="tk-grid" style="margin-top:18px">
-    <div class="tk"><div class="n">Takeaway 1</div>
-      <p>Closed 2025 condo sales in 91343 span <b>~$367-$491/SF</b>; 2BR units cluster
-      ~$445-490/SF and mid-size 3BR units ~$400-450/SF.</p></div>
-    <div class="tk"><div class="n">Takeaway 2</div>
-      <p>The model base-cases the exits at <b>$476/SF (2BR)</b> and <b>$432/SF (3BR)</b>
-      &mdash; well inside the comp band, conservative against new construction at
-      ~$465-472/SF.</p></div>
-    <div class="tk"><div class="n">Takeaway 3</div>
-      <p><b>Absorption risk is real:</b> Valley Villas is delivering 75 brand-new condos
-      in the same ZIP &mdash; direct competition for the 3BR sell-out.</p></div>
-    <div class="tk"><div class="n">Takeaway 4</div>
-      <p>Acquisition at $205K/unit vs. a blended finished basis near $547K/unit is the
-      <b>condominium arbitrage</b> &mdash; the entire thesis.</p></div>
-  </div>
-</div></div></section>
-
-<!-- RETURN MODEL -->
-<section id="model"><div class="wrap"><div class="card">
-  <h2><span class="num">07</span>Interactive Condo Return Model</h2>
-  <p class="lead">Pick a <b>legal path</b> and a <b>scenario</b>. The $4.1M price, the
-  12&times;2BR / 8&times;3BR mix and the Assessor square footage are
-  <span class="pill p-src">Sourced</span> and fixed; <b>exit values are computed as each
-  type's total SF &times; an editable $/SF</b>. Every other figure is an editable
-  <span class="pill p-assume">Assumption</span> that recomputes the return live.</p>
-
-  <div class="toggle-label">Legal Path</div>
-  <div class="presets">
-    <button id="pp-react" onclick="setPath('react')">Reactivation</button>
-    <button id="pp-conv" onclick="setPath('conv')">Full Conversion</button>
-  </div>
-  <div class="toggle-label">Execution Scenario</div>
-  <div class="presets">
-    <button id="pb-conservative" onclick="setScen('conservative')">Conservative</button>
-    <button id="pb-base" onclick="setScen('base')">Base Case</button>
-    <button id="pb-upside" onclick="setScen('upside')">Upside</button>
-  </div>
-
-  <div class="model">
-    <div class="mcol">
-      <h3>Acquisition</h3>
-      <div class="field locked"><label>Purchase price <span class="hint">Seller Counter No. 1</span></label>
-        <input id="purchase" value="4100000" inputmode="numeric" disabled></div>
-      <div class="field"><label>Acq. closing costs <span class="hint">% of price</span></label>
-        <input id="acqClosingPct" value="1.25" inputmode="decimal"></div>
-
-      <h3>Unit Mix &amp; Exit Pricing</h3>
-      <table class="mixtable">
-        <thead><tr><th>Type</th><th>Units</th><th>Total&nbsp;SF</th>
-          <th>Reno&nbsp;/&nbsp;unit</th><th>Exit&nbsp;$/SF</th></tr></thead>
-        <tbody>
-          <tr><td>2 BR</td><td>12</td><td>12,480</td>
-            <td><input id="reno2" value="36000" inputmode="numeric"></td>
-            <td><input id="psf2" value="476" inputmode="numeric"></td></tr>
-          <tr><td>3 BR</td><td>8</td><td>11,580</td>
-            <td><input id="reno3" value="46000" inputmode="numeric"></td>
-            <td><input id="psf3" value="432" inputmode="numeric"></td></tr>
-        </tbody>
-      </table>
-      <div class="mixtotal" id="mixtotal">&mdash;</div>
-
-      <h3>Restoration &amp; Site Costs</h3>
-      <div class="field"><label>Common area / exterior <span class="hint">total $</span></label>
-        <input id="commonArea" value="200000" inputmode="numeric"></div>
-      <div class="field"><label>HOA / map / DRE soft cost / unit <span class="hint">path-dependent</span></label>
-        <input id="convSoftPerUnit" value="8000" inputmode="numeric"></div>
-      <div class="field"><label>Tenant relocation / unit <span class="hint">blended over 20 (5 vacant)</span></label>
-        <input id="relocPerUnit" value="10000" inputmode="numeric"></div>
-      <div class="field"><label>City 9A required work <span class="hint">scope TBD &mdash; total $</span></label>
-        <input id="city9a" value="150000" inputmode="numeric"></div>
-
-      <h3>Financing</h3>
-      <div class="field"><label>Loan-to-cost <span class="hint">% of hard project cost</span></label>
-        <input id="loanLTC" value="65" inputmode="decimal"></div>
-      <div class="field"><label>Loan interest rate <span class="hint">% annual, I/O</span></label>
-        <input id="loanRate" value="9.0" inputmode="decimal"></div>
-      <div class="field"><label>Loan points <span class="hint">% origination fee</span></label>
-        <input id="loanPoints" value="1.5" inputmode="decimal"></div>
-
-      <h3>Sale &amp; Carry</h3>
-      <div class="field"><label>Selling costs <span class="hint">% of sellout</span></label>
-        <input id="sellingPct" value="6" inputmode="decimal"></div>
-      <div class="field"><label>Property carry <span class="hint">tax/ins/util total $</span></label>
-        <input id="propCarry" value="150000" inputmode="numeric"></div>
-      <div class="field"><label>Rental income offset <span class="hint">net, during hold</span></label>
-        <input id="rentalOffset" value="250000" inputmode="numeric"></div>
-      <div class="field"><label>Project timeline <span class="hint">months, buy to last sale</span></label>
-        <input id="timeline" value="20" inputmode="numeric"></div>
-    </div>
-
-    <div class="mcol">
-      <div class="result-hero">
-        <div class="k">Projected Net Profit</div>
-        <div class="big" id="r-profit">&mdash;</div>
-        <div class="sub" id="r-profit-sub">&mdash;</div>
-      </div>
-      <div class="metrics">
-        <div class="metric"><div class="k">Equity Multiple</div><div class="v" id="r-em">&mdash;</div></div>
-        <div class="metric"><div class="k">Return on Equity</div><div class="v" id="r-roe">&mdash;</div></div>
-        <div class="metric"><div class="k">Annualized ROE</div><div class="v" id="r-ann">&mdash;</div></div>
-        <div class="metric"><div class="k">Profit Margin</div><div class="v" id="r-margin">&mdash;</div></div>
-      </div>
-      <div class="uses">
-        <div class="row"><span>Acquisition price</span><span id="u-purchase">&mdash;</span></div>
-        <div class="row sub"><span>Acquisition closing costs</span><span id="u-acq">&mdash;</span></div>
-        <div class="row sub"><span>Unit renovation (all 20)</span><span id="u-reno">&mdash;</span></div>
-        <div class="row sub"><span>Common area / exterior</span><span id="u-common">&mdash;</span></div>
-        <div class="row sub"><span>HOA / map / DRE soft costs</span><span id="u-conv">&mdash;</span></div>
-        <div class="row sub"><span>Tenant relocation</span><span id="u-reloc">&mdash;</span></div>
-        <div class="row sub"><span>City 9A work</span><span id="u-9a">&mdash;</span></div>
-        <div class="row sub"><span>Loan fee + interest carry</span><span id="u-fin">&mdash;</span></div>
-        <div class="row sub"><span>Property carry</span><span id="u-carry">&mdash;</span></div>
-        <div class="row sub"><span>Selling costs</span><span id="u-sell">&mdash;</span></div>
-        <div class="row rev"><span>Less: rental income during hold</span><span id="u-rent">&mdash;</span></div>
-        <div class="row tot"><span>Total net project cost</span><span id="u-total">&mdash;</span></div>
-        <div class="row rev"><span>Condominium sellout (revenue)</span><span id="u-sellout">&mdash;</span></div>
-      </div>
-      <p class="small" id="mix-note" style="margin-top:8px">&mdash;</p>
-      <div class="metrics" style="margin-top:6px">
-        <div class="metric"><div class="k">Acq. + Reno Loan</div><div class="v" id="r-loan" style="font-size:18px">&mdash;</div></div>
-        <div class="metric"><div class="k">Equity Required</div><div class="v" id="r-equity" style="font-size:18px">&mdash;</div></div>
-      </div>
-      <p class="small" style="margin-top:10px">Interest carry is modeled on a declining
-      loan balance as units sell (≈62% average outstanding). "Equity required" is peak
-      equity, simplified. Annualized ROE is total ROE &divide; years; a true IRR requires
-      a unit-by-unit absorption schedule.</p>
-    </div>
-  </div>
-</div></div></section>
-
-<!-- COMPARE -->
-<section id="compare"><div class="wrap"><div class="card">
-  <h2><span class="num">08</span>Reactivation vs. Full Conversion</h2>
-  <p class="lead">Same building, same ~$10.9M sellout &mdash; the two legal paths differ
-  only in <b>cost, time, and risk</b>. Reactivating an existing recorded subdivision is
-  far faster and cheaper than a ground-up conversion. Which one applies is settled by the
-  preliminary title report.</p>
-  <div class="scroll"><table class="scn">
-    <thead><tr><th>Base-Case Outcome</th><th class="base">Reactivation</th><th>Full Conversion</th></tr></thead>
-    <tbody id="cmp-body"></tbody>
-  </table></div>
-  <p class="tcap">Generated live from the model. Tap the path / scenario buttons in
-  section 07 to load any combination into the interactive model.</p>
-</div>
-
-<div class="card recommend">
-  <h2>Bottom Line</h2>
-  <div class="band" id="rec-band">&mdash;</div>
-  <p id="rec-text"><b>Primary plan: hold as a 20-unit rental</b> (section 02) &mdash; the
-  $205K/door basis, 5.1x stabilized GRM, and 13.4% Year-5 cap on basis make the rental
-  case stand on its own without needing any condominium execution. If the new owner later
-  chooses to monetize the recorded subdivision, the reactivation path is materially better
-  than full conversion &mdash; roughly $4.3M profit in ~20 months vs. $3.6M over ~33 months
-  &mdash; and it removes the binary conversion-approval risk entirely. Order the title
-  report regardless so the optional condo exit stays available.</p>
-</div></div></section>
-
-<!-- WATERFALL -->
-<section id="waterfall"><div class="wrap"><div class="card">
-  <h2><span class="num">09</span>LP Investor Waterfall <span style="font-size:12px;color:var(--sub);font-weight:600">(condo path)</span></h2>
-  <p class="lead">How the deal's equity and profit are distributed between the
-  <b>LP investors</b> (the equity raise) and the <b>GP / sponsor</b> &mdash; return of
-  capital, then a preferred return, then a residual split (the sponsor promote). The
-  three structure inputs are editable; capital and profit flow <b>live from the model</b>
-  &mdash; change the path or scenario in section 07 and this updates with it.</p>
-
-  <div class="wf-inputs">
-    <div class="wfi"><label>GP Co-Investment</label>
-      <div class="ib"><input id="gpCoinvest" value="10" inputmode="decimal"><span class="u">%</span></div></div>
-    <div class="wfi"><label>LP Preferred Return</label>
-      <div class="ib"><input id="prefRate" value="8" inputmode="decimal"><span class="u">% / yr</span></div></div>
-    <div class="wfi"><label>Residual Split to LP</label>
-      <div class="ib"><input id="lpSplit" value="70" inputmode="decimal"><span class="u">% (GP rest)</span></div></div>
-  </div>
-
-  <div class="scroll"><table>
-    <thead><tr><th>Distribution Tier</th><th class="right">Amount</th>
-      <th class="right">To LP</th><th class="right">To GP</th></tr></thead>
-    <tbody>
-      <tr><td>Tier 1 &middot; Return of Capital</td>
-        <td class="right" id="wf-t1">&mdash;</td><td class="right" id="wf-t1-lp">&mdash;</td>
-        <td class="right" id="wf-t1-gp">&mdash;</td></tr>
-      <tr><td>Tier 2 &middot; Preferred Return</td>
-        <td class="right" id="wf-t2">&mdash;</td><td class="right" id="wf-t2-lp">&mdash;</td>
-        <td class="right" id="wf-t2-gp">&mdash;</td></tr>
-      <tr><td>Tier 3 &middot; Residual Split (promote)</td>
-        <td class="right" id="wf-t3">&mdash;</td><td class="right" id="wf-t3-lp">&mdash;</td>
-        <td class="right" id="wf-t3-gp">&mdash;</td></tr>
-      <tr style="font-weight:800;background:#fbf7ee">
-        <td>Total Distributions</td>
-        <td class="right" id="wf-tot">&mdash;</td><td class="right" id="wf-tot-lp">&mdash;</td>
-        <td class="right" id="wf-tot-gp">&mdash;</td></tr>
-    </tbody>
-  </table></div>
-
-  <div class="wfbar">
-    <div class="lp" id="wf-lpbar">LP</div>
-    <div class="gp" id="wf-gpbar">GP</div>
-  </div>
-  <p class="tcap">Share of total project profit &mdash; LP investors vs. GP/sponsor
-  (carried interest / promote).</p>
-
-  <div class="lpgp">
-    <div class="pc lp">
-      <h3>LP Investors</h3>
-      <div class="ln"><span>Capital invested</span><span id="lp-cap">&mdash;</span></div>
-      <div class="ln"><span>Total distributions</span><span id="lp-dist">&mdash;</span></div>
-      <div class="ln"><span>Net profit</span><span id="lp-profit">&mdash;</span></div>
-      <div class="ln"><span>Annualized return</span><span id="lp-ann">&mdash;</span></div>
-      <div class="ln big"><span>Equity multiple</span><span id="lp-mult">&mdash;</span></div>
-    </div>
-    <div class="pc gp">
-      <h3>GP / Sponsor</h3>
-      <div class="ln"><span>Co-investment</span><span id="gp-cap">&mdash;</span></div>
-      <div class="ln"><span>Total distributions</span><span id="gp-dist">&mdash;</span></div>
-      <div class="ln"><span>Net profit (incl. promote)</span><span id="gp-profit">&mdash;</span></div>
-      <div class="ln"><span>Annualized return</span><span id="gp-ann">&mdash;</span></div>
-      <div class="ln big"><span>Equity multiple</span><span id="gp-mult">&mdash;</span></div>
-    </div>
-  </div>
-
-  <p class="small" style="margin-top:14px">Standard structure shown: the preferred return
-  accrues pari passu on all equity (LP and GP co-investment), then residual profit splits
-  with a sponsor promote. Preferred return is simple (non-compounded) over the hold
-  period. Adjust the three inputs to the actual partnership terms. Illustrative only
-  &mdash; not an offer of securities.</p>
-</div></div></section>
-
 <!-- RISKS -->
 <section id="risks"><div class="wrap"><div class="card">
   <h2><span class="num">10</span>Key Risks &amp; Contingencies</h2>
@@ -1244,19 +1304,19 @@
 
 <!-- NEXT STEPS -->
 <section id="next"><div class="wrap"><div class="card">
-  <h2><span class="num">11</span>Post-Closing Action Items</h2>
-  <p class="lead">Execution priorities for the 20-unit rental hold &mdash; first 90 days
-  after close, then ongoing:</p>
+  <h2><span class="num">11</span>Sell-Out Execution &amp; Action Items</h2>
+  <p class="lead">Execution priorities for the condominium sell-out &mdash; sequenced from the
+  contingency window through unit closings:</p>
   <ul class="checks">
-    <li><b>Lease up 5 vacant units</b> (all in 8736: #1, 2, 3, 4, 6) at market rents &mdash; $3,075 2BR, $3,750 3BR; budget $40K for turn cost across the five units.</li>
-    <li><b>Initiate eviction on 8734-4 (Tiani Potts)</b> &mdash; tenant has not paid her $854 Section 8 tenant portion in years per the seller's notes on the rent roll; coordinate with LAHD on the S8 termination.</li>
-    <li><b>Serve maximum AB 1482 increases</b> on the 14 paying in-place leases (5% + CPI, currently ~8.6% in LA County); document last-increase dates to time the next round.</li>
-    <li>Engage property management &mdash; transition off the seller's onsite-manager structure (Wong family-owned for 17+ years); shop fee at 4% of EGI.</li>
-    <li>Obtain the City's Report (9A) and complete the required work; placeholder $150K but scope must be priced with a contractor.</li>
-    <li>Order the preliminary title report &mdash; confirm the recorded condominium plan / subdivision map so the optional condo exit (sections 05-09) stays available.</li>
-    <li>Confirm 8734 Burnet HOA corporate status (CA Secretary of State / FTB) &mdash; document the revival cost for future optionality even if held as rental long-term.</li>
-    <li>Loss-runs review &mdash; insurance binder $17,752 (AmTrust, expires 10/09/25; renewal due); shop carrier on renewal.</li>
-    <li>Recompute Year 1 NOI against actual lease-up pace &mdash; rebase the 5-yr pro forma off the post-stabilization rent roll.</li>
+    <li><b>Order the preliminary title report immediately</b> &mdash; confirm the recorded condominium plan / subdivision map (APNs 167-186) and CC&amp;Rs. This settles the master variable: HOA reactivation (the plan) vs. a full Tentative-Tract-Map conversion.</li>
+    <li><b>Confirm / revive the 8734 Burnet HOA</b> (CA Secretary of State / FTB) &mdash; reinstate the dormant association, update CC&amp;Rs, and budget the ~$160K reactivation cost; engage condo/HOA counsel and a DRE consultant on the public report path.</li>
+    <li><b>Price the renovation &amp; common-area scope with a GC</b> &mdash; per-unit refresh (kitchens, baths, finishes) plus exterior/common area; electrical panels are already replaced. Lock the budget that drives the model's exit $/SF.</li>
+    <li><b>Obtain the City's Report (9A) and price the required work</b> &mdash; placeholder $150K; scope must be confirmed in the 12-day contingency window before the deposit goes hard.</li>
+    <li><b>Build the unit-by-unit sell-out / absorption schedule</b> &mdash; sequence which units deliver vacant first (the 5 existing vacancies in 8736 lead); set release pricing against the for-sale comps (Section 03) and stage releases against Valley Villas' 75-unit competition.</li>
+    <li><b>Plan tenant delivery</b> &mdash; for occupied units, schedule turnover with proper notice and non-RSO relocation; prioritize the deepest below-market / long-tenancy units. Initiate the 8734-4 (Tiani Potts) S8 delinquency / eviction with LAHD.</li>
+    <li><b>Run the interim rental as carry, not as a hold</b> &mdash; keep occupied units paying to cover taxes/insurance/debt service during the sell-out; only re-lease vacants if a unit isn't being readied for sale.</li>
+    <li>Engage a sell-out listing/marketing program (individual condo MLS listings, lender pre-approval relationships); line up construction-to-sale financing draw/release mechanics tied to unit closings.</li>
+    <li>Loss-runs &amp; insurance &mdash; binder $17,752 (AmTrust, expires 10/09/25); place a builder's-risk / renovation policy for the sell-out period.</li>
   </ul>
 </div></div></section>
 
